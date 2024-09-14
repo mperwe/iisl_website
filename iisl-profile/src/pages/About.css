@@ -1,0 +1,17 @@
+/* src/pages/About.css */
+.about {
+    padding: 2rem;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e40af;
+  }
+  
+  .about p {
+    font-size: 1.125rem;
+    margin-top: 1rem;
+    color: #4b5563;
+  }
+  

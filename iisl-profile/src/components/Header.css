@@ -1,0 +1,41 @@
+/* src/components/Header.css */
+.header {
+    background-color: #1e40af;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header nav a {
+    margin-right: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header nav a:hover {
+    color: #d1d5db;
+  }
+  
+  .header .menu-icon {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .header nav {
+      display: none;
+    }
+    .header .menu-icon {
+      display: block;
+    }
+  }
+  

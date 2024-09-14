@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css"; // Link CSS
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
           </button>
         </div>
         <img 
-          src="https://example.com/your-image.jpg" 
+          src="pic1.png" 
           alt="IT Solutions" 
           className="max-w-md rounded-lg shadow-lg"
         />
@@ -61,7 +62,7 @@ const Home = () => {
       <section className="py-12 text-center bg-blue-600 text-white">
         <h2 className="text-4xl font-bold mb-4">Ready to Take Your Business to the Next Level?</h2>
         <p className="text-xl mb-6">Contact us today and discover how our IT solutions can help your business grow.</p>
-        <button className="bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg">
+        <button className="bg-white text-blue-900 px-6 py-3 rounded-lg shadow-lg">
           Get a Free Consultation
         </button>
       </section>
