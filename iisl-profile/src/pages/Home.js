@@ -37,6 +37,13 @@ const Home = () => {
             </p>
           </div>
           <div className="service-card">
+          <h3>Hardware & Software</h3>
+            <p>
+              We create custom software solutions that solve real-world problems
+              for businesses across industries.
+            </p>
+          </div>
+          <div className="service-card">
             <h3>Network Security</h3>
             <p>
               Protect your business with top-tier network security solutions
@@ -51,18 +58,29 @@ const Home = () => {
         <h2>What Our Clients Say</h2>
         <div className="testimonials-grid">
           <div className="testimonial-card">
-            <p>
-              "Intercontinental Infotech Solutions transformed our IT systems,
+            <p>IISL transformed our IT systems,
               boosting efficiency and reducing costs."
             </p>
-            <p className="author">- John Doe, CEO of TechCorp</p>
+            <p className="author">- Rober M, CEO of Techie World</p>
           </div>
           <div className="testimonial-card">
             <p>
               "Their team is highly professional and provided excellent support
               throughout the project."
             </p>
-            <p className="author">- Jane Smith, CTO of InnovateX</p>
+            <p className="author">- Luciana, CTO of Afaazi Events</p>
+          </div><div className="testimonial-card">
+            <p>
+              "Their team is highly professional and provided excellent support
+              throughout the project."
+            </p>
+            <p className="author">- Frank, CTO of Media Apps</p>
+          </div><div className="testimonial-card">
+            <p>
+              "Their team is highly professional and provided excellent support
+              throughout the project."
+            </p>
+            <p className="author">- Mutyaba, CTO of Ug Connect.</p>
           </div>
         </div>
       </section>
