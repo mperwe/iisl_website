@@ -1,0 +1,209 @@
+/* General Container Styles */
+.home-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+ /* Hero Section */
+.hero-section {
+    padding: 6rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    background-color: #b6b4ae;
+    background-image: url('../components/assets/office.jpg');
+    background-size: cover; /* Adjust size to cover the entire section */
+    background-repeat: no-repeat; /* Ensure image does not repeat */
+    background-position: center; /* Center the background image */
+    background-blend-mode: overlay; /* Blend the image with the background color for better readability */
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #06062d;
+    margin-bottom: 1.75rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    color: #0a1728;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+  }
+  
+  /* Services Section */
+  .services-section {
+    padding: 5rem 1.5rem;
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #1f2937;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .service-card {
+    background-color: rgb(215, 220, 227);
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-12px);
+  }
+  
+  .service-card h3 {
+    font-size: 1.85rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: #1f2937;
+  }
+  
+  .service-card p {
+    font-size: 1.125rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    padding: 5rem 1.5rem;
+    background-color: #f9fafb;
+    text-align: center;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #1f2937;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .testimonial-card p {
+    font-size: 1.125rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  .testimonial-card .author {
+    margin-top: 1.75rem;
+    text-align: right;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 5rem 1.5rem;
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+  
+  .cta-action-button {
+    background-color: white;
+    color: #1e3a8a;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-action-button:hover {
+    background-color: #f3f4f6;
+    color: #2563eb;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-direction: row;
+      text-align: left;
+      padding: 8rem 1.5rem;
+    }
+  
+    .hero-image img {
+      margin-top: 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-text h1 {
+      font-size: 4.5rem;
+    }
+  
+    .hero-text p {
+      font-size: 1.75rem;
+    }
+  
+    .cta-section h2 {
+      font-size: 3.25rem;
+    }
+  
+    .cta-section p {
+      font-size: 1.75rem;
+    }
+  }
+  
