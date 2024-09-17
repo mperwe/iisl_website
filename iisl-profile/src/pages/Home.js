@@ -37,17 +37,33 @@ const Home = () => {
             </p>
           </div>
           <div className="service-card">
-          <h3>Hardware & Software</h3>
+          <h3>Cybersecurity Audits & Compliance</h3>
             <p>
-              We create custom software solutions that solve real-world problems
-              for businesses across industries.
+            Auditing systems for compliance and enhancing security to safeguard data.
             </p>
           </div>
+
           <div className="service-card">
-            <h3>Network Security</h3>
+          <h3>IT Consultancy and Strategy Planning</h3>
             <p>
-              Protect your business with top-tier network security solutions
-              tailored to your needs.
+            Designing and implementing IT strategies 
+            to align technology with business goals and optimize infrastructure.
+            </p>
+          </div>
+          
+          <div className="service-card">
+          <h3>IT Infrastructure Management</h3>
+            <p>
+            IT strategy design, infrastructure optimization, 
+            and management of hardware and software installations.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <h3>Data Analytics & Insights</h3>
+            <p>
+            
+Data analysis and business intelligence for informed decision-making and performance improvement.
             </p>
           </div>
         </div>
