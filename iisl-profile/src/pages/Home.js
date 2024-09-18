@@ -13,9 +13,7 @@ const Home = () => {
           </p>
           <button className="cta-button">Contact Us Today</button>
         </div>
-        <div className="hero-image">
-          <img src="logo192.png" alt="IT Solutions" />
-        </div>
+     
       </section>
 
       {/* Services Section */}
@@ -85,19 +83,16 @@ Data analysis and business intelligence for informed decision-making and perform
               throughout the project."
             </p>
             <p className="author">- Luciana, CTO of Afaazi Events</p>
-          </div><div className="testimonial-card">
+          </div>
+          <div className="testimonial-card">
             <p>
               "Their team is highly professional and provided excellent support
               throughout the project."
             </p>
             <p className="author">- Frank, CTO of Media Apps</p>
-          </div><div className="testimonial-card">
-            <p>
-              "Their team is highly professional and provided excellent support
-              throughout the project."
-            </p>
-            <p className="author">- Mutyaba, CTO of Ug Connect.</p>
           </div>
+          
+         
         </div>
       </section>
 
