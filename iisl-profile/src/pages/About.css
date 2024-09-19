@@ -1,17 +1,54 @@
-/* src/pages/About.css */
-.about {
-    padding: 2rem;
-  }
-  
-  .about h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #1e40af;
-  }
-  
-  .about p {
-    font-size: 1.125rem;
-    margin-top: 1rem;
-    color: #4b5563;
-  }
-  
+/* General container styling */
+.about-container {
+  background-color: #f4f7fb;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Content area styling */
+.about-content {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Subtitle styling */
+.about-subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f5eff;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+.about-paragraph {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.about-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+}
