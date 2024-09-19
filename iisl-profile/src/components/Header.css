@@ -1,6 +1,6 @@
 /* Header Styles */
 .header {
-    background-color: white; /* Primary dark blue */
+    background-color: rgb(3, 12, 24); 
     padding: 1rem 2rem;
     color: white;
     position: relative;
@@ -18,7 +18,7 @@
   .logo a {
     font-size: 1.75rem;
     font-weight: 700;
-    color: rgb(4, 2, 12);
+    color: rgb(250, 249, 253);
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -34,7 +34,7 @@
   
   .menu a {
     font-size: 1rem;
-    color: rgb(7, 2, 16);
+    color: rgb(246, 245, 248);
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
@@ -45,7 +45,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: #171305;
+    background: #ecebe7;
     transition: width 0.3s;
     position: absolute;
     bottom: -5px;
@@ -78,7 +78,7 @@
   .mobile-menu {
     display: none;
     flex-direction: column;
-    background-color: #1e40af;
+    background-color: #f1f3f8;
     position: absolute;
     top: 100%;
     left: 0;

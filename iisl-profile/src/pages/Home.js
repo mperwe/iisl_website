@@ -75,21 +75,21 @@ Data analysis and business intelligence for informed decision-making and perform
             <p>IISL transformed our IT systems,
               boosting efficiency and reducing costs."
             </p>
-            <p className="author">- Rober M, CEO of Techie World</p>
+            <p className="author">Rober M, CEO of Techie World</p>
           </div>
           <div className="testimonial-card">
             <p>
               "Their team is highly professional and provided excellent support
               throughout the project."
             </p>
-            <p className="author">- Luciana, CTO of Afaazi Events</p>
+            <p className="author">Luciana, CTO of Afaazi Events</p>
           </div>
           <div className="testimonial-card">
             <p>
               "Their team is highly professional and provided excellent support
               throughout the project."
             </p>
-            <p className="author">- Frank, CTO of Media Apps</p>
+            <p className="author">Frank, CTO of Media Apps</p>
           </div>
           
          
