@@ -1,179 +1,184 @@
 /* General Container Styles */
+body {
+    background-image: url('../components/assets/backgd2.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
 .home-container {
-    max-width: 1600px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
+    
   }
   
- /* Hero Section */
-.hero-section {
-    padding: 6rem 1.5rem;
+  /* Hero Section */
+  .hero-section {
+    background: url('../components/assets/backgd1.jpg') no-repeat center center/cover, #a3d9a5; 
+    padding: 2rem 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column-reverse;
     text-align: center;
-    background-color: #b6b4ae;
-    background-image: url('../components/assets/office.jpg');
-    background-size: cover; /* Adjust size to cover the entire section */
-    background-repeat: no-repeat; /* Ensure image does not repeat */
-    background-position: center; /* Center the background image */
-    background-blend-mode: overlay; /* Blend the image with the background color for better readability */
+    
+    border-radius: 5px; 
+    box-shadow: 0px 4px 6px rgba(246, 242, 242, 0.1); 
   }
   
   .hero-text h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #06062d;
-    margin-bottom: 1.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(7, 18, 59);
+    margin-bottom: 1.5rem;
   }
   
   .hero-text p {
-    font-size: 1.5rem;
-    color: #0a1728;
-    margin-bottom: 2rem;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    color: #070c0c;
+    margin-bottom: 1.5rem;
   }
   
   .cta-button {
-    background-color: #1e3a8a;
+    background-color: #286451;
     color: white;
-    padding: 0.75rem 2rem;
-    font-size: 1.25rem;
-    border-radius: 0.75rem;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
   }
   
   .cta-button:hover {
-    background-color: #1d4ed8;
+    background-color: #94dd77;
   }
   
   .hero-image img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
-    border-radius: 0.75rem;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(241, 240, 240, 0.1);
   }
   
   /* Services Section */
   .services-section {
-    padding: 5rem 1.5rem;
+    padding: 4rem 1rem;
     text-align: center;
   }
   
   .services-section h2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     color: #1f2937;
   }
   
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
   }
   
   .service-card {
-    background-color: rgb(215, 220, 227);
-    padding: 2.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
   
   .service-card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-10px);
   }
   
   .service-card h3 {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     font-weight: 600;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     color: #1f2937;
   }
   
   .service-card p {
-    font-size: 1.125rem;
-    color: #4b5563;
-    line-height: 1.6;
+    font-size: 1rem;
+    color: #6b7280;
   }
   
   /* Testimonials Section */
   .testimonials-section {
-    padding: 5rem 1.5rem;
-    background-color: #f9fafb;
+    padding: 4rem 1rem;
+    background-color: #f0f4f8;
     text-align: center;
   }
   
   .testimonials-section h2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
-    color: #1f2937;
+    margin-bottom: 2rem;
+    color: #020810;
   }
   
   .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 6rem;
   }
   
   .testimonial-card {
-    background-color: white;
-    padding: 2.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    background-color: rgb(196, 230, 240);
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; 
   }
   
   .testimonial-card p {
-    font-size: 1.125rem;
-    color: #4b5563;
-    line-height: 1.6;
+    font-size: 1rem;
+    color: #02060e;
+    
   }
   
   .testimonial-card .author {
-    margin-top: 1.75rem;
-    text-align: right;
-    font-weight: 600;
+    margin-top: 1.5rem;
+    text-align: center; 
+    font-weight: 700;
     color: #1f2937;
   }
   
   /* CTA Section */
   .cta-section {
-    padding: 5rem 1.5rem;
-    background-color: #1e3a8a;
-    color: white;
+    padding: 4rem 1rem;
+    background-color: #9dd4dd;
+    color: rgb(8, 4, 4);
     text-align: center;
   }
   
   .cta-section h2 {
-    font-size: 2.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   
   .cta-section p {
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
   }
   
   .cta-action-button {
     background-color: white;
-    color: #1e3a8a;
-    padding: 0.75rem 2rem;
-    font-size: 1.25rem;
-    border-radius: 0.75rem;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    color: #040710;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
   }
   
   .cta-action-button:hover {
     background-color: #f3f4f6;
-    color: #2563eb;
+    color: #1e40af;
   }
   
   /* Responsive Design */
@@ -181,29 +186,28 @@
     .hero-section {
       flex-direction: row;
       text-align: left;
-      padding: 8rem 1.5rem;
     }
   
-    .hero-image img {
-      margin-top: 0;
+    .cta-action-button {
+      margin-top: 1rem;
     }
   }
   
   @media (min-width: 1024px) {
     .hero-text h1 {
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
   
     .hero-text p {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   
     .cta-section h2 {
-      font-size: 3.25rem;
+      font-size: 3rem;
     }
   
     .cta-section p {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   }
   
