@@ -50,21 +50,21 @@ const About = () => {
       <h2 className="about-title">Board of Trustees</h2>
       <div className="about-cards">
         <div className="card">
-          <img src="[Insert Image URL]" alt="Trustee 1" className="card-image" />
+          <img src={require('../components/images/boy3.jpg')} alt="Trustee 1" className="card-image" />
           <h3 className="card-title">Trustee 1</h3>
           <p className="card-description">
             A brief description of Trustee 1's role and contribution to IISL.
           </p>
         </div>
         <div className="card">
-          <img src="[Insert Image URL]" alt="Trustee 2" className="card-image" />
+          <img src={require('../components/images/boy2.jpg')} alt="Trustee 2" className="card-image" />
           <h3 className="card-title">Trustee 2</h3>
           <p className="card-description">
             A brief description of Trustee 2's role and contribution to IISL.
           </p>
         </div>
         <div className="card">
-          <img src="[Insert Image URL]" alt="Trustee 3" className="card-image" />
+          <img src={require('../components/images/boy3.jpg')} alt="Trustee 3" className="card-image" />
           <h3 className="card-title">Trustee 3</h3>
           <p className="card-description">
             A brief description of Trustee 3's role and contribution to IISL.
