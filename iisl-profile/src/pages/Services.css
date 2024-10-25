@@ -1,118 +1,103 @@
-/* General Styling */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
+/* General container styling */
 .services-container {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  font-family: 'Open Sans', sans-serif;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-title,
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
   color: #333;
 }
 
-/* Title Styling */
-.services-title {
-  font-size: 3em;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #1a73e8;
-  font-weight: 800;
-}
-
-/* Grid Styling for Cards (2 Rows with 3 Cards) */
+/* Grid layout for services section */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three cards in a row */
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
   justify-items: center;
-  margin-bottom: 60px;
 }
 
-/* Card Styling */
+/* Styling for each service card */
 .service-card {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 300px;
+  min-height: 200px;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Image Styling */
-.service-logo {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-/* Service Title */
 .service-title {
-  font-size: 1.5em;
-  color: #1a73e8;
-  margin-bottom: 15px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
 }
 
-/* Service Description */
 .service-description {
-  font-size: 1em;
-  color: #666;
-  line-height: 1.6;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-/* Testimonials Section */
+/* Styling for image-only cards */
+.image-only-card {
+  padding: 0;
+  background: none;
+}
+
+.extra-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Testimonials styling */
 .testimonials-section {
-  background-color: #e1f5fe;
-  padding: 50px 20px;
-  border-radius: 15px;
-  margin-bottom: 60px;
-}
-
-.section-title {
-  font-size: 2.5em;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #1a73e8;
-  font-weight: 700;
+  margin-top: 40px;
 }
 
 .testimonial {
+  padding: 20px;
+  background-color: #fff;
+  border-left: 4px solid #007bff;
   margin-bottom: 20px;
-  font-size: 1.2em;
-  text-align: center;
-  color: #333;
   font-style: italic;
+  color: #555;
 }
 
-/* Business Partners Section */
+/* Partners section */
 .partners-section {
-  text-align: center;
-}
-
-.partners-logos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .partners-logos img {
-  width: 150px;
-  height: auto;
-  transition: transform 0.3s ease;
+  width: 100px;
+  margin: 10px;
 }
 
-.partners-logos img:hover {
-  transform: scale(1.1);
+/* Responsive styling */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
 }

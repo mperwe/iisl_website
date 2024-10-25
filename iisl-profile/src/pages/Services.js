@@ -1,16 +1,9 @@
 import React from "react";
 import "./Services.css"; // Link CSS
 
-// Import service logos
-import itConsultingLogo from "../components/images/boy1.jpg";
-import managedItServicesLogo from "../components/images/boy2.jpg";
-import cloudServicesLogo from "../components/images/boy3.jpg";
-import cybersecurityLogo from "../components/images/boy1.jpg";
-import softwareDevelopmentLogo from "../components/images/boy2.jpg";
-import itTrainingLogo from "../components/images/boy3.jpg";
-import partner1 from "../components/images/boy2.jpg";
-import partner2 from "../components/images/boy2.jpg";
-import partner3 from "../components/images/boy2.jpg";
+// Import images for the extra cards
+import extraCard1Img from "../components/images/boy2.jpg";
+import extraCard2Img from "../components/images/boy2.jpg";
 
 const Services = () => {
   return (
@@ -19,57 +12,63 @@ const Services = () => {
       <h2 className="services-title">Our Services</h2>
       <div className="services-grid">
         {/* IT Consulting Services */}
-        <div className="service-card">
-          <img src={itConsultingLogo} alt="IT Consulting Logo" className="service-logo" />
+        <a href="/" className="service-card">
           <h3 className="service-title">IT Consulting Services</h3>
           <p className="service-description">
             Providing expert IT consulting to help businesses streamline operations, boost efficiency, and stay ahead of the competition.
           </p>
-        </div>
+        </a>
 
         {/* Managed IT Services */}
-        <div className="service-card">
-          <img src={managedItServicesLogo} alt="Managed IT Services Logo" className="service-logo" />
+        <a href="/" className="service-card">
           <h3 className="service-title">Managed IT Services</h3>
           <p className="service-description">
             Comprehensive management of your IT infrastructure to ensure continuous operations and reduce downtime.
           </p>
-        </div>
+        </a>
 
         {/* Cloud Services */}
-        <div className="service-card">
-          <img src={cloudServicesLogo} alt="Cloud Services Logo" className="service-logo" />
+        <a href="/" className="service-card">
           <h3 className="service-title">Cloud Services</h3>
           <p className="service-description">
             Scalable and secure cloud solutions to enhance collaboration and data accessibility.
           </p>
-        </div>
+        </a>
 
         {/* Cybersecurity Solutions */}
-        <div className="service-card">
-          <img src={cybersecurityLogo} alt="Cybersecurity Solutions Logo" className="service-logo" />
+        <a href="/" className="service-card">
           <h3 className="service-title">Cybersecurity Solutions</h3>
           <p className="service-description">
             Robust cybersecurity measures to safeguard your digital assets from potential threats and breaches.
           </p>
+        </a>
+
+          {/* Additional Card 1 - Image Only */}
+          <div className="service-card image-only-card">
+          <img src={extraCard1Img} alt="Extra Card 1" className="extra-card-img" />
         </div>
 
+
         {/* Software Development and Integration */}
-        <div className="service-card">
-          <img src={softwareDevelopmentLogo} alt="Software Development Logo" className="service-logo" />
+        <a href="/" className="service-card">
           <h3 className="service-title">Software Development and Integration</h3>
           <p className="service-description">
             Custom software solutions tailored to meet the specific needs of your business and seamless integration with existing systems.
           </p>
-        </div>
+        </a>
 
         {/* IT Training and Development */}
-        <div className="service-card">
-          <img src={itTrainingLogo} alt="IT Training Logo" className="service-logo" />
+        <a href="/" className="service-card">
           <h3 className="service-title">IT Training and Development</h3>
           <p className="service-description">
             Professional training programs designed to enhance the IT skills of your workforce and foster growth.
           </p>
+        </a>
+
+      
+        {/* Additional Card 2 - Image Only */}
+        <div className="service-card image-only-card">
+          <img src={extraCard2Img} alt="Extra Card 2" className="extra-card-img" />
         </div>
       </div>
 
@@ -88,9 +87,7 @@ const Services = () => {
       <div className="partners-section">
         <h2 className="section-title">Our Trusted Partners</h2>
         <div className="partners-logos">
-          <img src={partner1} alt="Partner 1" />
-          <img src={partner2} alt="Partner 2" />
-          <img src={partner3} alt="Partner 3" />
+          {/* Partner logos or links */}
         </div>
       </div>
     </div>
