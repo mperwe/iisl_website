@@ -43,6 +43,8 @@ const About = () => {
           <li>Cybersecurity Solutions</li>
           <li>Software Development and Integration</li>
           <li>IT Training and Development</li>
+          <li>Data Analytics and Business Intelligence</li>
+          <li>Network Infrastructure Design and Optimization</li>
         </ul>
       </div>
 

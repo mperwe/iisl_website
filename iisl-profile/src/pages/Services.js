@@ -43,12 +43,7 @@ const Services = () => {
           </p>
         </a>
 
-          {/* Additional Card 1 - Image Only */}
-          <div className="service-card image-only-card">
-          <img src={extraCard1Img} alt="Extra Card 1" className="extra-card-img" />
-        </div>
-
-
+         
         {/* Software Development and Integration */}
         <a href="/" className="service-card">
           <h3 className="service-title">Software Development and Integration</h3>
@@ -64,12 +59,23 @@ const Services = () => {
             Professional training programs designed to enhance the IT skills of your workforce and foster growth.
           </p>
         </a>
+        
+         {/* Software Development and Integration */}
+         <a href="/" className="service-card">
+          <h3 className="service-title">Data Analytics and Business Intelligence</h3>
+          <p className="service-description">
+          Data Analytics and Business Intelligence
+          </p>
+        </a>
 
-      
-        {/* Additional Card 2 - Image Only */}
-        <div className="service-card image-only-card">
-          <img src={extraCard2Img} alt="Extra Card 2" className="extra-card-img" />
-        </div>
+         {/* Software Development and Integration */}
+         <a href="/" className="service-card">
+          <h3 className="service-title">Network Infrastructure Design and Optimization</h3>
+          <p className="service-description">
+          Network Infrastructure Design and Optimization.
+          </p>
+        </a>
+       
       </div>
 
       {/* Testimonials Section */}

@@ -50,7 +50,7 @@ const Home = () => {
         </div>
 
         <div className="services-grid">
-          {/* Bottom Row of Service Cards */}
+         
           <div className="service-card">
             <h3>IT Infrastructure Management</h3>
             <p>
@@ -65,11 +65,23 @@ const Home = () => {
               Data analysis and business intelligence for informed decision-making and performance improvement.
             </p>
           </div>
-          {/* You can add more cards here if needed */}
+          <div className="service-card">
+            <h3>Data Analytics and Business Intelligence</h3>
+            <p>
+            Data Analytics and Business Intelligence
+            </p>
+          </div>
+
+          <div className="service-card">
+            <h3>Network Infrastructure Design and Optimization</h3>
+            <p>
+            Network Infrastructure Design and Optimization
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
+     
       <section className="testimonials-section">
         <h2>What Our Clients Say</h2>
         <div className="testimonials-grid">
