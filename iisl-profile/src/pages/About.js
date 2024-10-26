@@ -44,7 +44,7 @@ const About = () => {
           <li>Software Development and Integration</li>
           <li>IT Training and Development</li>
           <li>Data Analytics and Business Intelligence</li>
-          <li>Network Infrastructure Design and Optimization</li>
+          <li>IT Training and Development</li>
         </ul>
       </div>
 
