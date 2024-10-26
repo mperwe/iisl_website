@@ -9,17 +9,17 @@ const Home = () => {
         <div className="hero-text">
           <h1>Empowering Digital Futures</h1>
           <p>
-          World-class IT solutions for efficiency, innovation, and growth.
+            World-class IT solutions for efficiency, innovation, and growth.
           </p>
           <button className="cta-button">Contact Us Today</button>
         </div>
-     
       </section>
 
       {/* Services Section */}
       <section className="services-section">
         <h2>Our Services</h2>
         <div className="services-grid">
+          {/* Top Row of Service Cards */}
           <div className="service-card">
             <h3>Software Development</h3>
             <p>
@@ -35,35 +35,37 @@ const Home = () => {
             </p>
           </div>
           <div className="service-card">
-          <h3>Cybersecurity Audits & Compliance</h3>
+            <h3>Cybersecurity Audits & Compliance</h3>
             <p>
-            Auditing systems for compliance and enhancing security to safeguard data.
+              Auditing systems for compliance and enhancing security to safeguard data.
             </p>
           </div>
+          <div className="service-card">
+            <h3>IT Consultancy and Strategy Planning</h3>
+            <p>
+              Designing and implementing IT strategies 
+              to align technology with business goals and optimize infrastructure.
+            </p>
+          </div>
+        </div>
 
+        <div className="services-grid">
+          {/* Bottom Row of Service Cards */}
           <div className="service-card">
-          <h3>IT Consultancy and Strategy Planning</h3>
+            <h3>IT Infrastructure Management</h3>
             <p>
-            Designing and implementing IT strategies 
-            to align technology with business goals and optimize infrastructure.
-            </p>
-          </div>
-          
-          <div className="service-card">
-          <h3>IT Infrastructure Management</h3>
-            <p>
-            IT strategy design, infrastructure optimization, 
-            and management of hardware and software installations.
+              IT strategy design, infrastructure optimization, 
+              and management of hardware and software installations.
             </p>
           </div>
 
           <div className="service-card">
             <h3>Data Analytics & Insights</h3>
             <p>
-            
-Data analysis and business intelligence for informed decision-making and performance improvement.
+              Data analysis and business intelligence for informed decision-making and performance improvement.
             </p>
           </div>
+          {/* You can add more cards here if needed */}
         </div>
       </section>
 
@@ -72,10 +74,10 @@ Data analysis and business intelligence for informed decision-making and perform
         <h2>What Our Clients Say</h2>
         <div className="testimonials-grid">
           <div className="testimonial-card">
-            <p>IISL transformed our IT systems,
-              boosting efficiency and reducing costs."
+            <p>
+              "IISL transformed our IT systems, boosting efficiency and reducing costs."
             </p>
-            <p className="author">Rober M, CEO of Techie World</p>
+            <p className="author">Robert M, CEO of Techie World</p>
           </div>
           <div className="testimonial-card">
             <p>
@@ -91,8 +93,6 @@ Data analysis and business intelligence for informed decision-making and perform
             </p>
             <p className="author">Frank, CTO of Media Apps</p>
           </div>
-          
-         
         </div>
       </section>
 
