@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css"; // Link CSS
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,11 +12,13 @@ const Home = () => {
           <p>
             World-class IT solutions for efficiency, innovation, and growth.
           </p>
-          <button className="cta-button">Contact Us Today</button>
+          <Link to = '/services'>
+          <button className="cta-button">Lets connect</button>
+          
+          </Link>
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="services-section">
         <h2>Our Services</h2>
         <div className="services-grid">
@@ -50,7 +53,7 @@ const Home = () => {
         </div>
 
         <div className="services-grid">
-          {/* Bottom Row of Service Cards */}
+         
           <div className="service-card">
             <h3>IT Infrastructure Management</h3>
             <p>
@@ -65,11 +68,23 @@ const Home = () => {
               Data analysis and business intelligence for informed decision-making and performance improvement.
             </p>
           </div>
-          {/* You can add more cards here if needed */}
+          <div className="service-card">
+            <h3>Data Analytics and Business Intelligence</h3>
+            <p>
+            Data Analytics and Business Intelligence
+            </p>
+          </div>
+
+          <div className="service-card">
+            <h3>Network Infrastructure Design and Optimization</h3>
+            <p>
+            Network Infrastructure Design and Optimization
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
+     
       <section className="testimonials-section">
         <h2>What Our Clients Say</h2>
         <div className="testimonials-grid">
