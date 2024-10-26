@@ -1,213 +1,217 @@
 /* General Container Styles */
 body {
-    background-image: url('../components/assets/backgd2.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+  background-image: url('../components/assets/backgd2.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
 }
 
-
 .home-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    
-  }
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('../components/assets/backgd1.jpg') no-repeat center center/cover, #a3d9a5; 
+  padding: 2rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  text-align: center;
   
-  /* Hero Section */
+  border-radius: 5px; 
+  box-shadow: 0px 4px 6px rgba(246, 242, 242, 0.1); 
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(7, 18, 59);
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: #070c0c;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #286451;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #94dd77;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(241, 240, 240, 0.1);
+}
+
+/* Services Section */
+.services-section {
+  padding: 6rem 1rem; /* Increased padding for more space around */
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjusted min width for larger cards */
+  gap: 2rem; /* Space between cards */
+  justify-items: center; /* Center cards within the grid */
+}
+
+.service-card {
+  background-color: white;
+  padding: 2.5rem; /* Increased padding for larger cards */
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 2rem; /* Add space below each card */
+  max-width: 400px; /* Set a max width for cards */
+  width: 100%; /* Make the card responsive */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 6rem 1rem; /* Increased padding for more space around */
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #020810;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjusted min width for larger cards */
+  gap: 2rem; /* Space between cards */
+  justify-items: center; /* Center cards within the grid */
+}
+
+.testimonial-card {
+  background-color: rgb(196, 230, 240);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+  margin-bottom: 2rem; /* Add space below each testimonial card */
+  max-width: 400px; /* Set a max width for cards */
+  width: 100%; /* Make the card responsive */
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #02060e; 
+}
+
+.testimonial-card .author {
+  margin-top: 1.5rem;
+  text-align: center; 
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 4rem 1rem;
+  background-color: #9dd4dd;
+  color: rgb(8, 4, 4);
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-action-button {
+  background-color: white;
+  color: #040710;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.cta-action-button:hover {
+  background-color: #f3f4f6;
+  color: #1e40af;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
   .hero-section {
-    background: url('../components/assets/backgd1.jpg') no-repeat center center/cover, #a3d9a5; 
-    padding: 2rem 8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column-reverse;
-    text-align: center;
-    
-    border-radius: 5px; 
-    box-shadow: 0px 4px 6px rgba(246, 242, 242, 0.1); 
-  }
-  
-  .hero-text h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: rgb(7, 18, 59);
-    margin-bottom: 1.5rem;
-  }
-  
-  .hero-text p {
-    font-size: 1.25rem;
-    color: #070c0c;
-    margin-bottom: 1.5rem;
-  }
-  
-  .cta-button {
-    background-color: #286451;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #94dd77;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0px 4px 6px rgba(241, 240, 240, 0.1);
-  }
-  
-  /* Services Section */
-  .services-section {
-    padding: 4rem 1rem;
-    text-align: center;
-  }
-  
-  .services-section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: #1f2937;
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-  
-  .service-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .service-card h3 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #1f2937;
-  }
-  
-  .service-card p {
-    font-size: 1rem;
-    color: #6b7280;
-  }
-  
-  /* Testimonials Section */
-  .testimonials-section {
-    padding: 4rem 1rem;
-    background-color: #f0f4f8;
-    text-align: center;
-  }
-  
-  .testimonials-section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: #020810;
-  }
-  
-  .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 6rem;
-  }
-  
-  .testimonial-card {
-    background-color: rgb(196, 230, 240);
-    padding: 3rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; 
-  }
-  
-  .testimonial-card p {
-    font-size: 1rem;
-    color: #02060e;
-    
-  }
-  
-  .testimonial-card .author {
-    margin-top: 1.5rem;
-    text-align: center; 
-    font-weight: 700;
-    color: #1f2937;
-  }
-  
-  /* CTA Section */
-  .cta-section {
-    padding: 4rem 1rem;
-    background-color: #9dd4dd;
-    color: rgb(8, 4, 4);
-    text-align: center;
-  }
-  
-  .cta-section h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-  }
-  
-  .cta-section p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-  
-  .cta-action-button {
-    background-color: white;
-    color: #040710;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-  }
-  
-  .cta-action-button:hover {
-    background-color: #f3f4f6;
-    color: #1e40af;
-  }
-  
-  /* Responsive Design */
-  @media (min-width: 768px) {
-    .hero-section {
       flex-direction: row;
       text-align: left;
-    }
-  
-    .cta-action-button {
+  }
+
+  .cta-action-button {
       margin-top: 1rem;
-    }
   }
-  
-  @media (min-width: 1024px) {
-    .hero-text h1 {
+}
+
+@media (min-width: 1024px) {
+  .hero-text h1 {
       font-size: 4rem;
-    }
-  
-    .hero-text p {
-      font-size: 1.5rem;
-    }
-  
-    .cta-section h2 {
-      font-size: 3rem;
-    }
-  
-    .cta-section p {
-      font-size: 1.5rem;
-    }
   }
-  
+
+  .hero-text p {
+      font-size: 1.5rem;
+  }
+
+  .cta-section h2 {
+      font-size: 3rem;
+  }
+
+  .cta-section p {
+      font-size: 1.5rem;
+  }
+}
