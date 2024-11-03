@@ -6,6 +6,10 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "../src/pages/Contacts";
+import Network from '../src/pages/network';
+import Cyber from '../src/pages/cyber';
+import Software from '../src/pages/software';
+import Consult from '../src/pages/consult';
 
 const App = () => {
   return (
@@ -18,6 +22,10 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/network" element={<Network />} />
+            <Route path="/cyber" element={<Cyber />} />
+            <Route path="/software" element={<Software />} />
+            <Route path="/consult" element={<Consult />} />
           </Routes>
         </main>
         <Footer />
