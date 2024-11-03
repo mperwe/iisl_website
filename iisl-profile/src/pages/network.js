@@ -12,7 +12,7 @@ const Services = () => {
       <h2 className="services-title">Our Services</h2>
       <div className="services-grid">
          {/* Software Development and Integration */}
-         <a href="/software" className="service-card">
+         <a href="/" className="service-card">
           <h3 className="service-title">Data Analytics and Business Intelligence</h3>
           <p className="service-description">
           Data Analytics and Business Intelligence
@@ -20,7 +20,7 @@ const Services = () => {
         </a>
 
         {/* Managed IT Services */}
-        <a href="/network" className="service-card">
+        <a href="/" className="service-card">
           <h3 className="service-title">Managed IT Services</h3>
           <p className="service-description">
             Comprehensive management of your IT infrastructure to ensure continuous operations and reduce downtime.
@@ -28,7 +28,7 @@ const Services = () => {
         </a>
 
         {/* Cloud Services */}
-        <a href="/cyber" className="service-card">
+        <a href="/" className="service-card">
           <h3 className="service-title">Cloud Services</h3>
           <p className="service-description">
             Scalable and secure cloud solutions to enhance collaboration and data accessibility.
@@ -36,7 +36,7 @@ const Services = () => {
         </a>
 
         {/* Cybersecurity Solutions */}
-        <a href="/cyber" className="service-card">
+        <a href="/" className="service-card">
           <h3 className="service-title">Cybersecurity Solutions</h3>
           <p className="service-description">
             Robust cybersecurity measures to safeguard your digital assets from potential threats and breaches.
@@ -45,7 +45,7 @@ const Services = () => {
 
          
         {/* Software Development and Integration */}
-        <a href="/software" className="service-card">
+        <a href="/" className="service-card">
           <h3 className="service-title">Software Development and Integration</h3>
           <p className="service-description">
             Custom software solutions tailored to meet the specific needs of your business and seamless integration with existing systems.
@@ -53,7 +53,7 @@ const Services = () => {
         </a>
 
         {/* IT Training and Development */}
-        <a href="/consult" className="service-card">
+        <a href="/" className="service-card">
           <h3 className="service-title">IT Training and Development</h3>
           <p className="service-description">
             Professional training programs designed to enhance the IT skills of your workforce and foster growth.
@@ -61,7 +61,7 @@ const Services = () => {
         </a>
 
         {/* IT Consulting Services */}
-        <a href="/consult" className="service-card">
+        <a href="/" className="service-card">
           <h3 className="service-title">IT Consulting Services</h3>
           <p className="service-description">
             Providing expert IT consulting to help businesses streamline operations, boost efficiency, and stay ahead of the competition.
@@ -69,8 +69,8 @@ const Services = () => {
         </a>
         
         
-         {/* Network Infrastructure Design and Optimization */}
-         <a href="/network" className="service-card">
+         {/* Software Development and Integration */}
+         <a href="/" className="service-card">
           <h3 className="service-title">Network Infrastructure Design and Optimization</h3>
           <p className="service-description">
           Network Infrastructure Design and Optimization.
