@@ -86,13 +86,23 @@ const Services = () => {
           <p>"IISL transformed our IT infrastructure, allowing us to scale our operations seamlessly." - John Doe, CEO of TechCorp</p>
         </div>
         <div className="testimonial">
+          <p>"IISL transformed our IT infrastructure, allowing us to scale our operations seamlessly." - John Doe, CEO of TechCorp</p>
+        </div>
+        <div className="testimonial">
+          <p>"IISL transformed our IT infrastructure, allowing us to scale our operations seamlessly." - John Doe, CEO of TechCorp</p>
+        </div>
+        <div className="testimonial">
+          <p>"IISL transformed our IT infrastructure, allowing us to scale our operations seamlessly." - John Doe, CEO of TechCorp</p>
+        </div>
+        <div className="testimonial">
           <p>"Their cybersecurity solutions are top-notch. We feel much more secure." - Jane Smith, CTO of Secure Solutions</p>
         </div>
       </div>
+      
 
       {/* Business Partners Section */}
       <div className="partners-section">
-        <h2 className="section-title">Our Trusted Partners</h2>
+        <h2 className="section-title"></h2>
         <div className="partners-logos">
           {/* Partner logos or links */}
         </div>
