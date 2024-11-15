@@ -4,11 +4,13 @@ import "./Home.css";
 
 // Import images
 import data1 from "../components/images/data1.jpg";
-import data2 from "../components/images/data2.gif";
-import data3 from "../components/images/data3.jpg";;
+import data3 from "../components/images/data3.jpg";
+import IT1 from "../components/images/IT1.jpg";
+import IT2 from "../components/images/IT2.jpg";
+import IT3 from "../components/images/IT3.jpg";
 
 const Home = () => {
-  const images = [data1, data2, data3]; // Array of images to slide
+  const images = [data1, data3, IT1, IT2, IT3]; // Array of images to slide
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
