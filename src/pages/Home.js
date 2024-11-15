@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 // Import images
-import boy1 from "../components/images/boy1.jpg";
-import boy2 from "../components/images/boy2.jpg";
-import boy3 from "../components/images/boy3.jpg";
+import data1 from "../components/images/data1.jpg";
+import data3 from "../components/images/data3.jpg";
+import IT1 from "../components/images/IT1.jpg";
+import IT2 from "../components/images/IT2.jpg";
+import IT3 from "../components/images/IT3.jpg";
 
 const Home = () => {
-  const images = [boy1, boy2, boy3]; // Array of images to slide
+  const images = [data1, data3, IT1, IT2, IT3]; // Array of images to slide
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
