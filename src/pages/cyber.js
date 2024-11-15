@@ -9,24 +9,9 @@ const Services = () => {
   return (
     <div className="services-container">
       {/* Services Section */}
-      <h2 className="services-title">Our Services</h2>
+      <h2 className="services-title">Cybersecurity | Cloud Services</h2>
       <div className="services-grid">
-         {/* Software Development and Integration */}
-         <a href="" className="service-card">
-          <h3 className="service-title">Data Analytics and Business Intelligence</h3>
-          <p className="service-description">
-          Data Analytics and Business Intelligence
-          </p>
-        </a>
-
-        {/* Managed IT Services */}
-        <a href="" className="service-card">
-          <h3 className="service-title">Managed IT Services</h3>
-          <p className="service-description">
-            Comprehensive management of your IT infrastructure to ensure continuous operations and reduce downtime.
-          </p>
-        </a>
-
+        
         {/* Cloud Services */}
         <a href="" className="service-card">
           <h3 className="service-title">Cloud Services</h3>
@@ -43,40 +28,7 @@ const Services = () => {
           </p>
         </a>
 
-         
-        {/* Software Development and Integration */}
-        <a href="" className="service-card">
-          <h3 className="service-title">Software Development and Integration</h3>
-          <p className="service-description">
-            Custom software solutions tailored to meet the specific needs of your business and seamless integration with existing systems.
-          </p>
-        </a>
-
-        {/* IT Training and Development */}
-        <a href="" className="service-card">
-          <h3 className="service-title">IT Training and Development</h3>
-          <p className="service-description">
-            Professional training programs designed to enhance the IT skills of your workforce and foster growth.
-          </p>
-        </a>
-
-        {/* IT Consulting Services */}
-        <a href="" className="service-card">
-          <h3 className="service-title">IT Consulting Services</h3>
-          <p className="service-description">
-            Providing expert IT consulting to help businesses streamline operations, boost efficiency, and stay ahead of the competition.
-          </p>
-        </a>
-        
-        
-         {/* Software Development and Integration */}
-         <a href="" className="service-card">
-          <h3 className="service-title">Network Infrastructure Design and Optimization</h3>
-          <p className="service-description">
-          Network Infrastructure Design and Optimization.
-          </p>
-        </a>
-       
+               
       </div>
 
       {/* Testimonials Section */}
