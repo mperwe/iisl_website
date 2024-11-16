@@ -117,7 +117,11 @@ const Home = () => {
       <section className="cta-section">
         <h2>Ready to Take Your Business to the Next Level?</h2>
         <p>Contact us today to discover how our IT solutions can help your business grow.</p>
+
+        <Link to="/Contact">
         <button className="cta-action-button">Get a Free Consultation</button>
+        </Link>
+       
       </section>
     </div>
   );
