@@ -86,15 +86,7 @@ const Services = () => {
         <div className="testimonial">
           <p>"IISL transformed our IT infrastructure, allowing us to scale our operations seamlessly." - John Doe, CEO of TechCorp</p>
         </div>
-        <div className="testimonial">
-          <p>"IISL transformed our IT infrastructure, allowing us to scale our operations seamlessly." - John Doe, CEO of TechCorp</p>
-        </div>
-        <div className="testimonial">
-          <p>"IISL transformed our IT infrastructure, allowing us to scale our operations seamlessly." - John Doe, CEO of TechCorp</p>
-        </div>
-        <div className="testimonial">
-          <p>"IISL transformed our IT infrastructure, allowing us to scale our operations seamlessly." - John Doe, CEO of TechCorp</p>
-        </div>
+               
         <div className="testimonial">
           <p>"Their cybersecurity solutions are top-notch. We feel much more secure." - Jane Smith, CTO of Secure Solutions</p>
         </div>
