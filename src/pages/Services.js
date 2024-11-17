@@ -15,7 +15,7 @@ const Services = () => {
          <a href="/software" className="service-card">
           <h3 className="service-title">Data Analytics and Business Intelligence</h3>
           <p className="service-description">
-          Data Analytics and Business Intelligence
+          Turning data into insights, using analysis and forecasts to guide strategic decisions and drive growth.
           </p>
         </a>
 
@@ -23,7 +23,7 @@ const Services = () => {
         <a href="/network" className="service-card">
           <h3 className="service-title">Managed IT Services</h3>
           <p className="service-description">
-            Comprehensive management of your IT infrastructure to ensure continuous operations and reduce downtime.
+          This involves outsourcing IT management to experts, ensuring smooth operations and security while businesses focus on their core tasks.
           </p>
         </a>
 
@@ -31,7 +31,7 @@ const Services = () => {
         <a href="/cyber" className="service-card">
           <h3 className="service-title">Cloud Services</h3>
           <p className="service-description">
-            Scalable and secure cloud solutions to enhance collaboration and data accessibility.
+          Offering remote access to computing resources like storage and software, Cloud Services provide businesses with scalability, flexibility, and cost savings.
           </p>
         </a>
 
@@ -39,24 +39,24 @@ const Services = () => {
         <a href="/cyber" className="service-card">
           <h3 className="service-title">Cybersecurity Solutions</h3>
           <p className="service-description">
-            Robust cybersecurity measures to safeguard your digital assets from potential threats and breaches.
+          Protect businesses from digital threats through measures like firewalls, encryption, and threat monitoring.
           </p>
         </a>
 
          
         {/* Software Development and Integration */}
         <a href="/software" className="service-card">
-          <h3 className="service-title">Software Development and Integration</h3>
+          <h3 className="service-title">Software Development & Integration</h3>
           <p className="service-description">
-            Custom software solutions tailored to meet the specific needs of your business and seamless integration with existing systems.
+          We focus on creating custom software solutions and ensuring seamless integration with existing systems to optimize business processes and functionality
           </p>
         </a>
 
         {/* IT Training and Development */}
         <a href="/consult" className="service-card">
-          <h3 className="service-title">IT Training and Development</h3>
+          <h3 className="service-title">IT Training and Outsourcing</h3>
           <p className="service-description">
-            Professional training programs designed to enhance the IT skills of your workforce and foster growth.
+          This involves training upskills the workforce, enhancing productivity, while outsourcing lets companies hire external experts for specific tasks, optimizing operations and reducing costs
           </p>
         </a>
 
@@ -64,16 +64,17 @@ const Services = () => {
         <a href="/consult" className="service-card">
           <h3 className="service-title">IT Consulting Services</h3>
           <p className="service-description">
-            Providing expert IT consulting to help businesses streamline operations, boost efficiency, and stay ahead of the competition.
+          We provide expert advice to businesses on how to use technology to achieve their goals. Consultants assess existing IT systems, recommend improvements, and help implement solutions to optimize efficiency, security, and busines growth.
           </p>
         </a>
         
         
          {/* Network Infrastructure Design and Optimization */}
          <a href="/network" className="service-card">
-          <h3 className="service-title">Network Infrastructure Design and Optimization</h3>
+          <h3 className="service-title">Network Infrastructure Design</h3>
           <p className="service-description">
-          Network Infrastructure Design and Optimization.
+
+          This involves planning and creating the layout for a company’s network, including servers, routers, switches, and connections. The goal is to ensure reliable, secure, and scalable communication systems that support business operations efficiently.
           </p>
         </a>
        

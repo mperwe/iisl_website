@@ -14,49 +14,50 @@ const Software = () => {
   return (
     <div className="styles-container">
       {/* Services Section */}
-      <h2 className="styles-title">Software, Data & Business Intelligence</h2>
+      <h2 className="styles-title">Data Analytics & Business Intelligence</h2>
       <div className="styles-grid">
         {/* Styles Cards */}
         <a href="#" className="styles-card">
           <img src={card1Img} alt="Software Development" className="styles-image" />
-          <h3 className="styles-title">Software Development and Integration</h3>
+          <h3 className="styles-title">  Data Collection & Integration</h3>
           <p className="styles-description">
-            Custom software solutions tailored to meet the specific needs of your business and seamless integration with existing systems.
+          Data is collected from diverse sources like databases, APIs, and customer interactions. Integration combines these into a unified system, ensuring all relevant data is accessible for analysis, eliminating silos, and creating a single source of truth for informed decisions.
+          
           </p>
         </a>
         <a href="#" className="styles-card">
           <img src={card2Img} alt="Data Analytics" className="styles-image" />
-          <h3 className="styles-title">Data Analytics and Business Intelligence</h3>
+          <h3 className="styles-title">Data Cleaning & Preparation</h3>
           <p className="styles-description">
-            Gain insights and make data-driven decisions with advanced analytics and BI tools.
+          Raw data often contains errors or inconsistencies. Cleaning ensures accuracy by removing duplicates and handling missing values. Prepared data is transformed and categorized to make it compatible with analytical tools, ensuring reliable insights.
           </p>
         </a>
         <a href="#" className="styles-card">
           <img src={card3Img} alt="Cloud Solutions" className="styles-image" />
-          <h3 className="styles-title">Cloud Solutions and Management</h3>
+          <h3 className="styles-title"> Descriptive Analytics</h3>
           <p className="styles-description">
-            Scalable and secure cloud solutions that grow with your business needs.
+          Descriptive analytics analyzes historical data to identify trends and patterns. It answers "What happened?" through reports, summaries, and dashboards, providing a clear understanding of past performance, such as sales trends or customer behavior.
           </p>
         </a>
         <a href="#" className="styles-card">
           <img src={card4Img} alt="Cybersecurity" className="styles-image" />
-          <h3 className="styles-title">Cybersecurity and Risk Management</h3>
+          <h3 className="styles-title"> Predictive Analytics</h3>
           <p className="styles-description">
-            Protect your data and infrastructure with state-of-the-art cybersecurity solutions.
+          Predictive analytics uses historical data and machine learning models to forecast future outcomes, like sales projections or customer behavior. It helps businesses anticipate opportunities and risks, enabling proactive decision-making.
           </p>
         </a>
         <a href="#" className="styles-card">
           <img src={card5Img} alt="IT Consulting" className="styles-image" />
-          <h3 className="styles-title">IT Consulting and Strategy</h3>
+          <h3 className="styles-title"> Visualization & Reporting</h3>
           <p className="styles-description">
-            Expert IT consultancy to guide your business through digital transformation.
+          Visual tools like charts and dashboards simplify complex data, making insights easy to understand. Tools like Tableau and Power BI highlight KPIs and trends in real-time, supporting quick and informed decisions by stakeholders.
           </p>
         </a>
         <a href="#" className="styles-card">
           <img src={card6Img} alt="AI & Automation" className="styles-image" />
-          <h3 className="styles-title">AI & Automation Solutions</h3>
+          <h3 className="styles-title">  Strategic Decision-Making</h3>
           <p className="styles-description">
-            Leverage AI to streamline operations and drive business innovation.
+          Insights from analytics enable businesses to optimize processes, identify opportunities, and mitigate risks. Data-driven strategies improve operational efficiency, enhance customer satisfaction, and drive long-term growth.
           </p>
         </a>
       </div>
