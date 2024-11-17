@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css"; // Link CSS
+import logo from "../pages/iisllogo.png"; // Import the logo image
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,9 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <h1 className="logo">
-          <Link to="/">IISL</Link>
+          <Link to="/">
+            <img src={logo} alt="IISL Logo" className="logo-image" />
+          </Link>
         </h1>
         <nav className={`menu ${isOpen ? "menu-open" : ""}`}>
           <Link to="/">Home</Link>
