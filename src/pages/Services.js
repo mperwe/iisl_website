@@ -9,11 +9,15 @@ const Services = () => {
   return (
     <div className="services-container">
       {/* Services Section */}
-      <h2 className="services-title">Our Services</h2>
+       {/* Banner Section */}
+       <div className="banner-section">
+        <img src="/" alt="ervice Banner" className="about-banner" />
+        <h1 className="banner-title">Our Service (IISL)</h1>
+      </div>
       <div className="services-grid">
          {/* Software Development and Integration */}
          <a href="/software" className="service-card">
-          <h3 className="service-title">Data Analytics and Business Intelligence</h3>
+          <h3 className="service-title">Data & Business Intelligence</h3>
           <p className="service-description">
           Turning data into insights, using analysis and forecasts to guide strategic decisions and drive growth.
           </p>
@@ -46,9 +50,9 @@ const Services = () => {
          
         {/* Software Development and Integration */}
         <a href="/software" className="service-card">
-          <h3 className="service-title">Software Development & Integration</h3>
+          <h3 className="service-title">Software Development </h3>
           <p className="service-description">
-          We focus on creating custom software solutions and ensuring seamless integration with existing systems to optimize business processes and functionality
+          We create custom software solutions that integrate smoothly with existing systems to optimize business processes and functionality.
           </p>
         </a>
 
@@ -56,7 +60,7 @@ const Services = () => {
         <a href="/consult" className="service-card">
           <h3 className="service-title">IT Training and Outsourcing</h3>
           <p className="service-description">
-          This involves training upskills the workforce, enhancing productivity, while outsourcing lets companies hire external experts for specific tasks, optimizing operations and reducing costs
+          We enhance productivity through training and optimize operations by outsourcing expert tasks, reducing costs.
           </p>
         </a>
 
@@ -64,17 +68,16 @@ const Services = () => {
         <a href="/consult" className="service-card">
           <h3 className="service-title">IT Consulting Services</h3>
           <p className="service-description">
-          We provide expert advice to businesses on how to use technology to achieve their goals. Consultants assess existing IT systems, recommend improvements, and help implement solutions to optimize efficiency, security, and busines growth.
+          We help businesses optimize their IT systems for better efficiency and growth by offering expert advice and implementing tailored technology solutions.
           </p>
         </a>
         
         
          {/* Network Infrastructure Design and Optimization */}
          <a href="/network" className="service-card">
-          <h3 className="service-title">Network Infrastructure Design</h3>
+          <h3 className="service-title">Network Infrastructure </h3>
           <p className="service-description">
-
-          This involves planning and creating the layout for a company’s network, including servers, routers, switches, and connections. The goal is to ensure reliable, secure, and scalable communication systems that support business operations efficiently.
+          We design and plan secure, scalable networks to ensure efficient business communication, supporting seamless operations.
           </p>
         </a>
        
