@@ -1,14 +1,21 @@
-/* General container styling */
-.services-container {
-  padding: 40px 30px; /* Reduced top padding to move content up */
-  max-width: 1500px;
-  margin: 0 auto;
-  background: url('bg1.jpg') no-repeat center center/cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: -40px; /* Move content up further */
-}
+/* Services.css */
 
+/* Container for services section */
+.services-container {
+  padding: 80px 30px 40px; /* Add more padding on top to lower the section */
+  max-width: 100%;
+  margin: 0 auto;
+  background: url('IT5.png') no-repeat center center/cover;
+  background-attachment: fixed; /* Ensures the background image stays fixed */
+  height: auto; /* Set to auto to let the content flow naturally */
+  border-radius: 0; /* Remove rounding for full width */
+  box-shadow: none;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+}
 
 /* Title Styling */
 .services-title,
@@ -22,12 +29,15 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Grid layout for services section */
+/* Grid layout for services section - 5 cards in one row */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
   gap: 30px;
   justify-items: center;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 /* Styling for each service card */
@@ -119,9 +129,15 @@
 }
 
 /* Responsive styling */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards on medium screens */
+  }
+}
+
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
   }
 
   .service-card {
