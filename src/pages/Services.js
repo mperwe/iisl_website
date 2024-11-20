@@ -16,7 +16,7 @@ const Services = () => {
       </div>
       <div className="services-grid">
          {/* Software Development and Integration */}
-         <a href="/software" className="service-card">
+         <a href="/business" className="service-card">
           <h3 className="service-title">Data & Business Intelligence</h3>
           <p className="service-description">
           Turning data into insights, using analysis and forecasts to guide strategic decisions and drive growth.
@@ -25,7 +25,7 @@ const Services = () => {
 
         {/* Managed IT Services */}
         <a href="/network" className="service-card">
-          <h3 className="service-title">Managed IT Services</h3>
+          <h3 className="service-title">IT & Network Solutions</h3>
           <p className="service-description">
           This involves outsourcing IT management to experts, ensuring smooth operations and security while businesses focus on their core tasks.
           </p>
@@ -33,17 +33,17 @@ const Services = () => {
 
         {/* Cloud Services */}
         <a href="/cyber" className="service-card">
-          <h3 className="service-title">Cloud Services</h3>
+          <h3 className="service-title"></h3>
           <p className="service-description">
-          Offering remote access to computing resources like storage and software, Cloud Services provide businesses with scalability, flexibility, and cost savings.
+          
           </p>
         </a>
 
         {/* Cybersecurity Solutions */}
         <a href="/cyber" className="service-card">
-          <h3 className="service-title">Cybersecurity Solutions</h3>
+          <h3 className="service-title"></h3>
           <p className="service-description">
-          Protect businesses from digital threats through measures like firewalls, encryption, and threat monitoring.
+          
           </p>
         </a>
 
