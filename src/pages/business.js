@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import "./styles.css"; // Link CSS
+import "./styles.css"; 
 
 // Import images for the service cards
 import card1Img from "../components/images/boy1.jpg";

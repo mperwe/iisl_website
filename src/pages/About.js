@@ -6,8 +6,8 @@ const About = () => {
     <div className="about-container">
       {/* Banner Section */}
       <div className="banner-section">
-        <img src="/" alt="About Us Banner" className="about-banner" />
-        <h1 className="banner-title">About Intercontinental Infotech Solutions (IISL)</h1>
+        <img src="" alt="About Us Banner" className="about-banner" />
+        <h1 className="banner-title">IISL</h1>
       </div>
 
       {/* About Us Section */}

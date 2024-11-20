@@ -11,6 +11,7 @@ import Cyber from '../src/pages/cyber';
 import Software from '../src/pages/software';
 import Consult from '../src/pages/consult';
 import Business from '../src/pages/business';
+import Training from '../src/pages/training'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
             <Route path="/software" element={<Software />} />
             <Route path="/consult" element={<Consult />} />
             <Route path="/business" element={<Business />} />
+            <Route path="/training" element={<Training />} />
           </Routes>
         </main>
         <Footer />
