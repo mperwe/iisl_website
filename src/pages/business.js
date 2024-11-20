@@ -10,11 +10,11 @@ import card4Img from "../components/images/boy1.jpg";
 import card5Img from "../components/images/boy2.jpg";
 import card6Img from "../components/images/boy3.jpg";
 
-const Software = () => {
+const Business = () => {
   return (
     <div className="styles-container">
       {/* Services Section */}
-      <h2 className="styles-title">      <h2 className="page-title">Software Development</h2>
+      <h2 className="styles-title">      <h2 className="page-title">Data Analytics & Business Intelligence</h2>
       </h2>
       <div className="styles-grid">
         {/* Styles Cards */}
@@ -23,7 +23,9 @@ const Software = () => {
           <img src={card2Img} alt="Data Cleaning & Preparation" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
-          <b>Requirement Analysis;</b> IISL works closely with stakeholders to gather detailed information about the software’s purpose, define business objectives, and outline user expectations. This ensures we fully understand the technical and functional requirements.
+          <b>Data & Business Intelligence;</b> Data is collected from diverse sources like databases, APIs, and customer interactions.
+            Integration combines these into a unified system, ensuring all relevant data is accessible
+            for analysis, eliminating silos, and creating a single source of truth for informed decisions.
           </p>
         </a>
         
@@ -31,7 +33,9 @@ const Software = () => {
           <img src={card2Img} alt="Data Cleaning & Preparation" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
-          <b>System Design;</b>We create a detailed blueprint for the software, including its architecture, user interface (UI/UX), database structure, and workflows. This design serves as a roadmap for the development process.
+          <b>Data Cleaning & Preparation;</b> Raw data often contains errors or inconsistencies. Cleaning ensures accuracy by removing
+            duplicates and handling missing values. Prepared data is transformed and categorized to make
+            it compatible with analytical tools, ensuring reliable insights.
           </p>
         </a>
 
@@ -39,28 +43,36 @@ const Software = () => {
           <img src={card3Img} alt="Descriptive Analytics" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
-            <b>Development and Coding;</b> We build the software by writing code using appropriate programming languages, frameworks, and tools. Our team develops the product in stages or modules to ensure accuracy and functionality.
+            <b>Descriptive Analytics;</b> Descriptive analytics analyzes historical data to identify trends and patterns. It answers
+            "What happened?" through reports, summaries, and dashboards, providing a clear understanding
+            of past performance, such as sales trends or customer behavior.
           </p>
         </a>
         <a href="#" className="styles-card">
           <img src={card4Img} alt="Predictive Analytics" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
-            <b>Quality Assurance and Testing; </b> We rigorously test the software to identify and fix bugs, vulnerabilities, or inefficiencies. Our testing methods include functional, performance, integration, and user acceptance testing to deliver a reliable product.
+            <b>Predictive Analytics; </b> IISL uses historical data and machine learning models to forecast future
+            outcomes, like sales projections or customer behavior. It helps businesses anticipate
+            opportunities and risks, enabling proactive decision-making.
           </p>
         </a>
         <a href="#" className="styles-card">
           <img src={card5Img} alt="Visualization & Reporting" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
-            <b>System Deployment;</b>Once tested and approved, the software is deployed into a production environment. This involves setting up servers, configuring systems, and ensuring the software works smoothly in real-world conditions..
+            <b>Visualization & Reporting;</b>Visual tools like charts and dashboards simplify complex data, making insights easy to
+            understand. Tools like Tableau and Power BI highlight KPIs and trends in real-time,
+            supporting quick and informed decisions by stakeholders.
           </p>
         </a>
         <a href="#" className="styles-card">
           <img src={card6Img} alt="Strategic Decision-Making" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
-            <b>Maintenance and Updates;</b>We provide ongoing support to address issues, implement updates, and add new features as needed. This ensures the software remains efficient, secure, and aligned with evolving requirements.
+            <b>Strategic Decision-Making;</b>Insights from analytics enable businesses to optimize processes, identify opportunities,
+            and mitigate risks. Data-driven strategies improve operational efficiency, enhance customer
+            satisfaction, and drive long-term growth.
           </p>
         </a>
       </div>
@@ -83,4 +95,4 @@ const Software = () => {
   );
 };
 
-export default Software;
+export default Business;
