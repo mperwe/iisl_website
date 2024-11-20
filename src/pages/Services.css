@@ -2,18 +2,18 @@
 
 /* Container for services section */
 .services-container {
-  padding: 80px 30px 40px; /* Add more padding on top to lower the section */
+  padding: 80px 30px 40px; 
   max-width: 100%;
   margin: 0 auto;
   background: url('IT5.png') no-repeat center center/cover;
-  background-attachment: fixed; /* Ensures the background image stays fixed */
-  height: auto; /* Set to auto to let the content flow naturally */
-  border-radius: 0; /* Remove rounding for full width */
+  background-attachment: fixed; 
+  height: auto; 
+  border-radius: 0; 
   box-shadow: none;
   margin-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align items to the top */
+  justify-content: flex-start; 
   align-items: center;
 }
 
@@ -32,7 +32,7 @@
 /* Grid layout for services section - 5 cards in one row */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 30px;
   justify-items: center;
   width: 100%;
