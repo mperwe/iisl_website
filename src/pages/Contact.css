@@ -1,166 +1,147 @@
-/* General Styling */
-.contact-container {
-  max-width: 500px; /* Further reduced width */
-  margin: 80px auto 40px; /* Added top margin to lower the card */
-  padding: 40px 20px;
+/* Apply the background image to the entire page */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure the body takes up the entire viewport height */
+  background-image: url('contactus1.jpg');
+  background-size: cover; /* Make the image cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-  z-index: 1;
+  color: #333;
 }
 
+/* General Styling for the container */
+.contact-container {
+  max-width: 450px; /* Slightly wider for better spacing */
+  margin: 100px auto; /* Center horizontally and add vertical spacing */
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for contrast */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for a lifted effect */
+  text-align: center; /* Center-align text for a balanced layout */
+}
+
+/* Card Styling */
 .contact-card {
-  background-color: #fff;
+  background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Reduced bottom margin */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  overflow: hidden; /* Ensures content doesn't overflow rounded corners */
 }
 
 .card-image {
   width: 100%;
-  height: 180px; /* Further reduced image height */
+  height: 150px;
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .card-content {
-  padding: 20px;
+  padding: 15px;
 }
 
 .card-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #333;
 }
 
 .card-description {
   color: #666;
-  font-size: 1.125rem;
-}
-
-.contact-link {
-  color: #007BFF;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-phone {
-  color: #333;
-  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
 /* Contact Info Section */
 .contact-info {
-  background-color: #f9f9f9;
-  padding: 24px;
+  background-color: #3c9596;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  margin-top: 30px; /* Reduced margin */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
 
 .contact-info h2 {
-  font-size: 2rem;
-  color: #333;
+  font-size: 1.75rem;
+  color: #f9f6f6;
 }
 
 .contact-info p {
-  color: #555;
-  font-size: 1.125rem;
+  color: #f8f6f6;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.contact-actions h3 {
-  font-size: 1.75rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
+/* Buttons */
 .contact-actions a {
   display: inline-block;
-  width: auto;
-  text-align: center;
-  padding: 10px 20px;
-  margin: 10px 0;
+  width: 100%; 
+  padding: 12px; 
+  margin: 10px 0; 
   border-radius: 6px;
-  font-size: 1.125rem;
-  text-decoration: none;
+  font-size: 1rem;
   font-weight: bold;
+  text-align: center;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .btn-schedule {
-  background-color: #007BFF;
+  background-color: #007bff; 
   color: #fff;
-  border: none;
-}
-
-.btn-schedule:hover {
-  background-color: #0056b3;
 }
 
 .btn-email {
-  background-color: #28a745;
+  background-color: #28a745; 
   color: #fff;
-  border: none;
-}
-
-.btn-email:hover {
-  background-color: #218838;
 }
 
 .btn-whatsapp {
   background-color: #25d366;
   color: #fff;
-  border: none;
+}
+
+.btn-schedule:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.btn-email:hover {
+  background-color: #1e7e34;
+  transform: translateY(-3px);
 }
 
 .btn-whatsapp:hover {
-  background-color: #128c7e;
-}
-
-/* Full Page Background */
-
-body {
-  background-image: url('bg1.jpg'); /* Path to your background image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-   align-items: flex-start; /* Aligns content to the top */
-}
-.contact-container {
-  background-color: rgba(255, 255, 255, 0.85); /* Light background overlay for text visibility */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  background-color: #1c9c52;
+  transform: translateY(-3px);
 }
 
 /* Footer */
 footer {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
+  padding: 15px;
   background-color: #333;
   color: #fff;
   text-align: center;
   margin-top: 40px;
+  font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-container {
-    padding: 20px 10px;
+    padding: 20px 15px;
+    margin: 80px auto;
   }
 
   .card-content {
-    padding: 16px;
+    padding: 10px;
   }
 
-  .contact-info {
-    padding: 24px;
-  }
-
-  .btn-schedule,
-  .btn-email,
-  .btn-whatsapp {
-    width: 50%;
+  .contact-actions a {
+    margin: 8px 0;
   }
 }
