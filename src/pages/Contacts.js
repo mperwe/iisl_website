@@ -1,6 +1,7 @@
 import React from "react";
-import "./Contact.css"; // Include Tailwind or custom CSS for additional styling.
+import "./Contact.css"; 
 import boyImage from "../pages/contactus2.jpg";
+import footerImage from "../pages/data2.gif";
 
 const ContactButton = ({ href, label, bgColor, textColor, children }) => (
   <a
@@ -19,14 +20,11 @@ const Contact = () => {
     <section className="contact-container mx-auto px-4 py-12 max-w-4xl">
       {/* Contact Card */}
       <article className="contact-card shadow-lg rounded-lg overflow-hidden flex flex-wrap lg:flex-nowrap bg-white">
-        {/* Left Image Section */}
         <div className="card-image-container flex-shrink-0 lg:w-1/3">
           <img src={boyImage} alt="Contact" className="card-image w-full h-full object-cover" />
         </div>
-
-        {/* Right Content Section */}
         <div className="card-content p-6 flex-grow">
-          <h2 className="card-title text-3xl font-bold text-gray-800 mb-4">Connect with Us</h2>
+          <h2 className="card-title text-3xl font-bold text-gray-800 mb-4">Join Us Now</h2>
           <p className="card-description text-lg text-gray-600 mb-4">
             We're always ready to assist. Feel free to reach out with any questions or feedback.
           </p>
@@ -46,7 +44,6 @@ const Contact = () => {
           Whether it's a question, a suggestion, or a business inquiry, don't hesitate to get in touch. We value all feedback and strive to respond promptly.
         </p>
 
-        {/* Contact Buttons */}
         <div className="contact-actions">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">Additional Options</h3>
           <ContactButton
@@ -74,6 +71,11 @@ const Contact = () => {
             Chat on WhatsApp
           </ContactButton>
         </div>
+      </article>
+
+      {/* Footer Image Section */}
+      <article className="footer-image mt-12">
+        <img src={footerImage} alt="Footer" className="w-full h-auto rounded-lg shadow-lg" />
       </article>
     </section>
   );
