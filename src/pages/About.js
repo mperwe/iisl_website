@@ -1,25 +1,46 @@
 import React from "react";
-import "./About.css"; // Link CSS
+import "./About.css";
+
+// Import images
+import data from "../components/assets/data1.jpg";
+import data3 from "../components/assets/data3.jpg";
+import cloud1 from "../components/images/IT2.jpg";
+
+const trustees = [
+  {
+    img: data, // Imported image
+    name: "Trustee 1",
+    description: "A brief description of Trustee 1's role and contributions.",
+  },
+  {
+    img: data3, // Imported image
+    name: "Trustee 2",
+    description: "A brief description of Trustee 2's role and contributions.",
+  },
+  {
+    img: cloud1, // Imported image
+    name: "Trustee 3",
+    description: "A brief description of Trustee 3's role and contributions.",
+  },
+];
 
 const About = () => {
   return (
     <div className="about-container">
       {/* Banner Section */}
       <div className="banner-section">
-        <img src="" alt="About Us Banner" className="about-banner" />
-        <h1 className="banner-title">IISL</h1>
+        <h1 className="banner-title">Welcome to IISL</h1>
       </div>
 
       {/* About Us Section */}
-      <div className="about-card">
+      <section className="about-card">
         <h2 className="about-title">Who We Are</h2>
         <p className="about-paragraph">
           Intercontinental Infotech Solutions (IISL) provides advanced IT solutions,
-          strategic consulting, and professional training, helping businesses and individuals
-          succeed in the digital space. Our certified experts specialize in cloud computing,
-          cybersecurity, software development, and data analytics.
+          strategic consulting, and professional training. We empower businesses and individuals
+          in cloud computing, cybersecurity, software development, and data analytics.
         </p>
-      </div>
+      </section>
 
       {/* Vision and Mission Section */}
       <div className="about-card">
@@ -58,24 +79,22 @@ const About = () => {
       </div>
 
       {/* Board of Trustees Section */}
-      <h2 className="about-title">Board of Trustees</h2>
-      <div className="trustees-section">
-        <div className="trustee-card">
-          <img src="." alt="Trustee 1" className="trustee-image" />
-          <h3 className="trustee-name">Trustee 1</h3>
-          <p className="trustee-description">A brief description of Trustee 1's role and contributions.</p>
+      <section className="trustees-section">
+        <h2 className="about-title">Board of Trustees</h2>
+        <div className="trustees-grid">
+          {trustees.map((trustee, index) => (
+            <div key={index} className="trustee-card">
+              <img
+                src={trustee.img}
+                alt={trustee.name}
+                className="trustee-image"
+              />
+              <h3 className="trustee-name">{trustee.name}</h3>
+              <p className="trustee-description">{trustee.description}</p>
+            </div>
+          ))}
         </div>
-        <div className="trustee-card">
-          <img src="/trustee2.jpg" alt="Trustee 2" className="trustee-image" />
-          <h3 className="trustee-name">Trustee 2</h3>
-          <p className="trustee-description">A brief description of Trustee 2's role and contributions.</p>
-        </div>
-        <div className="trustee-card">
-          <img src="/trustee3.jpg" alt="Trustee 3" className="trustee-image" />
-          <h3 className="trustee-name">Trustee 3</h3>
-          <p className="trustee-description">A brief description of Trustee 3's role and contributions.</p>
-        </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -1,88 +1,102 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import "./styles.css"; // Link CSS
+import "./About.css";
 
-// Import images for the service cards
-import card1Img from "../components/images/boy1.jpg";
-import card2Img from "../components/images/boy2.jpg";
-import card3Img from "../components/images/boy3.jpg";
-import card4Img from "../components/images/boy1.jpg";
-import card5Img from "../components/images/boy2.jpg";
-import card6Img from "../components/images/boy3.jpg";
+// Import images
+import data from "../components/assets/data1.jpg";
+import data3 from "../components/assets/data3.jpg";
+import cloud1 from "../components/images/IT2.jpg";
 
-const Software = () => {
+const trustees = [
+  {
+    img: data, // Imported image
+    name: "Trustee 1",
+    description: "A brief description of Trustee 1's role and contributions.",
+  },
+  {
+    img: data3, // Imported image
+    name: "Trustee 2",
+    description: "A brief description of Trustee 2's role and contributions.",
+  },
+  {
+    img: cloud1, // Imported image
+    name: "Trustee 3",
+    description: "A brief description of Trustee 3's role and contributions.",
+  },
+];
+
+const About = () => {
   return (
-    <div className="styles-container">
-      {/* Services Section */}
-      <h2 className="styles-title">IT & Network Solutions</h2>
-      <div className="styles-grid">
-        {/* Styles Cards */}
-        <a href="#" className="styles-card">
-          <img src={card1Img} alt="Software Development" className="styles-image" />
-          <h3 className="styles-title"></h3>
-          <p className="styles-description">
-          <b>Network Design & Implementation;</b>
-          Planning and building efficient networks, including wired (LAN/WAN), wireless, and secure remote connections (VPNs) to meet organizational needs
-          </p>
-        </a>
-        <a href="#" className="styles-card">
-          <img src={card2Img} alt="Data Analytics" className="styles-image" />
-          <h3 className="styles-title"></h3>
-          <p className="styles-description">
-          <b>IT Infrastructure Management;</b>
-          Managing and optimizing servers, storage, and other hardware/software to ensure smooth and reliable IT operations.
-          </p>
-        </a>
-        <a href="#" className="styles-card">
-          <img src={card3Img} alt="Cloud Solutions" className="styles-image" />
-          <h3 className="styles-title"></h3>
-          <p className="styles-description">
-          <b>Cybersecurity Services;</b>
-          Implementing tools and practices to protect networks, systems, and data from cyber threats like hacking, malware, and unauthorized access.
-          </p>
-        </a>
-        <a href="#" className="styles-card">
-          <img src={card4Img} alt="Cybersecurity" className="styles-image" />
-          <h3 className="styles-title"></h3>
-          <p className="styles-description">
-          <b>Cloud Computing and Virtualization;</b>
-          Enabling scalable, cost-effective IT operations by hosting resources in the cloud and using virtual machines to maximize resource utilization
-          </p>
-        </a>
-        <a href="#" className="styles-card">
-          <img src={card5Img} alt="IT Consulting" className="styles-image" />
-          <h3 className="styles-title"></h3>
-          <p className="styles-description">
-          <b>Proactive Monitoring and Maintenance;</b>
-          Continuously monitoring IT systems to identify and resolve potential issues before they impact performance or security.
-          </p>
-        </a>
-        <a href="#" className="styles-card">
-          <img src={card6Img} alt="AI & Automation" className="styles-image" />
-          <h3 className="styles-title"></h3>
-          <p className="styles-description">
-          <b>Technical Support and Helpdesk Services;</b>
-          Providing assistance to users through troubleshooting, resolving IT problems, and offering guidance on technology use.
-          </p>
-        </a>
+    <div className="about-container">
+      {/* Banner Section */}
+      <div className="banner-section">
+        <h1 className="banner-title">Welcome to IISL</h1>
       </div>
 
-      {/* Back to Services Button */}
-      <div className="back-button-container">
-        <Link to="/services" className="back-button">
-          Back to Services
-        </Link>
+      {/* About Us Section */}
+      <section className="about-card">
+        <h2 className="about-title">Who We Are</h2>
+        <p className="about-paragraph">
+          Intercontinental Infotech Solutions (IISL) provides advanced IT solutions,
+          strategic consulting, and professional training. We empower businesses and individuals
+          in cloud computing, cybersecurity, software development, and data analytics.
+        </p>
+      </section>
+
+      {/* Vision and Mission Section */}
+      <div className="about-card">
+        <h3 className="about-subtitle">Our Vision</h3>
+        <p className="about-paragraph">
+          To be a global leader in IT solutions, empowering businesses and individuals
+          through innovation, expertise, and a commitment to excellence.
+        </p>
+        <h3 className="about-subtitle">Our Mission</h3>
+        <p className="about-paragraph">
+          To provide innovative, reliable, and scalable IT services that help our clients
+          achieve their goals, while fostering a culture of continuous learning and growth.
+        </p>
       </div>
 
-           {/* Business Partners Section */}
-      <div className="partners-section">
-        <h2 className="section-title">Our Trusted Partners</h2>
-        <div className="partners-logos">
-          {/* Partner logos or links */}
+      {/* Why Choose IISL and Our Services Section */}
+      <div className="about-card">
+        <h3 className="about-subtitle">Why Choose IISL?</h3>
+        <ul className="about-list">
+          <li>Expertise across various IT domains</li>
+          <li>Global reach with tailored solutions</li>
+          <li>Commitment to innovation and excellence</li>
+          <li>Customer-centric approach</li>
+        </ul>
+
+        <h3 className="about-subtitle">Our Services</h3>
+        <ul className="about-list">
+          <li>IT Consulting Services</li>
+          <li>Managed IT Services</li>
+          <li>Cloud Services</li>
+          <li>Cybersecurity Solutions</li>
+          <li>Software Development and Integration</li>
+          <li>IT Training and Development</li>
+          <li>Data Analytics and Business Intelligence</li>
+        </ul>
+      </div>
+
+      {/* Board of Trustees Section */}
+      <section className="trustees-section">
+        <h2 className="about-title">Board of Trustees</h2>
+        <div className="trustees-grid">
+          {trustees.map((trustee, index) => (
+            <div key={index} className="trustee-card">
+              <img
+                src={trustee.img}
+                alt={trustee.name}
+                className="trustee-image"
+              />
+              <h3 className="trustee-name">{trustee.name}</h3>
+              <p className="trustee-description">{trustee.description}</p>
+            </div>
+          ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 };
 
-export default Software;
+export default About;
