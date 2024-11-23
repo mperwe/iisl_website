@@ -20,7 +20,7 @@ const Business = () => {
         {/* Styles Cards */}
        
         <a href="#" className="styles-card">
-          <img src={card2Img} alt="Data Cleaning & Preparation" className="styles-image" />
+          <img src={card1Img} alt="Data Cleaning & Preparation" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
           <b>Data & Business Intelligence;</b> Data is collected from diverse sources like databases, APIs, and customer interactions.
