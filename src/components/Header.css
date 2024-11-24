@@ -3,11 +3,11 @@
   background-color: rgb(20, 5, 53);
   padding: 1rem 2rem;
   color: white;
-  position: fixed; /* Ensures the header is fixed */
+  position: fixed; 
   top: 0; /* Sticks the header to the top */
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensures it is above other elements */
+  z-index: 1000;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -89,13 +89,13 @@
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: rgb(4, 3, 15); /* Match header color */
+  background-color: rgb(4, 3, 15); 
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   padding: 1rem;
-  z-index: 999; /* Stays above other elements */
+  z-index: 999;
 }
 
 .mobile-menu a {

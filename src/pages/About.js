@@ -2,9 +2,9 @@ import React from "react";
 import "./About.css";
 
 // Import images
-import data from "../components/assets/data1.jpg";
-import data3 from "../components/assets/data3.jpg";
-import cloud1 from "../components/images/IT2.jpg";
+import data from "../components/assets/profile.jpg";
+import data3 from "../components/assets/profile.jpg";
+import cloud1 from "../components/assets/profile.jpg";
 
 const trustees = [
   {
