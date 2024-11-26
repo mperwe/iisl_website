@@ -3,12 +3,12 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./styles.css"; 
 
 // Import images for the service cards
-import card1Img from "../components/images/boy1.jpg";
-import card2Img from "../components/images/boy2.jpg";
-import card3Img from "../components/images/boy3.jpg";
-import card4Img from "../components/images/boy1.jpg";
-import card5Img from "../components/images/boy2.jpg";
-import card6Img from "../components/images/boy3.jpg";
+import card1Img from "../components/images/picBA.jpeg";
+import card2Img from "../components/images/paBenefitsCleaning.png";
+import card3Img from "../components/images/PicBADescrptive.jpg";
+import card4Img from "../components/images/picbapredictiveA.png";
+import card5Img from "../components/images/picvisualisation.png";
+import card6Img from "../components/images/picBAdecisionmaking.jpg";
 
 const Business = () => {
   return (
