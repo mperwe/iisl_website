@@ -11,8 +11,7 @@ const Services = () => {
       {/* Services Section */}
        {/* Banner Section */}
        <div className="banner-section">
-        <img src="/" alt="ervice Banner" className="about-banner" />
-        <h1 className="banner-title">Service</h1>
+       
       </div>
       <div className="services-grid">
          {/* Software Development and Integration */}
