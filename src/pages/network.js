@@ -3,12 +3,13 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./styles.css"; // Link CSS
 
 // Import images for the service cards
-import card1Img from "../components/images/boy1.jpg";
-import card2Img from "../components/images/boy2.jpg";
-import card3Img from "../components/images/boy3.jpg";
-import card4Img from "../components/images/boy1.jpg";
-import card5Img from "../components/images/boy2.jpg";
-import card6Img from "../components/images/boy3.jpg";
+import card1Img from "../components/images/networkD1.jpg";
+import card2Img from "../components/images/networkinfra.jpeg";
+import card3Img from "../components/images/networkcyber.jpeg";
+import card4Img from "../components/images/networkcloud.jpg";
+import card5Img from "../components/images/networkmonitoring.png";
+import card6Img from "../components/images/networksupport.jpg";
+
 
 const networks = () => {
   return (
@@ -20,7 +21,7 @@ const networks = () => {
         {/* Styles Cards */}
        
         <a href="#" className="styles-card">
-          <img src={card2Img} alt="Data Cleaning & Preparation" className="styles-image" />
+          <img src={card1Img} alt="Data Cleaning & Preparation" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
           <b>Network Design & Implementation;</b>
