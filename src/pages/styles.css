@@ -1,46 +1,46 @@
 /* General Page Styling */
 body {
-  font-family: 'Poppins', sans-serif; /* Professional, modern font */
+  font-family: 'Poppins', sans-serif; 
   margin: 0;
   padding: 0;
-  background-color: #f8f9fc; /* Soft neutral background for readability */
-  color: #333; /* Standard dark text color */
+  background-color: #f8f9fc; 
+  color: #333; 
 }
 
 /* Add padding to lower the page content */
 .styles-container {
-  padding-top: 120px; /* Creates space from the top */
+  padding-top: 120px; 
 }
 
 /* Center and Style the Main Title */
 .styles-title {
-  font-size: 2rem; /* Larger for emphasis */
-  font-weight: 700; /* Bold and prominent */
-  color: #2c3e50; /* Sophisticated dark color */
-  text-align: center; /* Center-align the title */
-  margin-bottom: 30px; /* Balanced space below the title */
-  text-transform: capitalize; /* Formal capitalization */
-  font-family: 'Poppins', sans-serif; /* Consistent professional font */
-  letter-spacing: 1px; /* Slight letter spacing for elegance */
+  font-size: 2rem; 
+  font-weight: 700;
+  color: #2c3e50; 
+  text-align: center;
+  margin-bottom: 30px; 
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif; 
+  letter-spacing: 1px; 
 }
 
 /* Services Grid - Three Up, Three Down Layout */
 .styles-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
-  background: url('data3.jpg') no-repeat center center/cover; /* Elegant background image */
-  gap: 40px; /* Balanced spacing between cards */
-  margin: 50px auto; /* Centered and with vertical spacing */
-  padding: 0 15px; /* Outer padding for alignment */
-  max-width: 1200px; /* Constrain width for a centered, balanced layout */
+  grid-template-columns: repeat(3, 1fr);
+  background: url('') no-repeat center center/cover; 
+  gap: 40px; 
+  margin: 50px auto; 
+  padding: 0 15px; 
+  max-width: 1200px; 
 }
 
 /* General Card Styling */
 .styles-card {
-  background: linear-gradient(135deg, #ffffff, #f8f9fc); /* Gradient for depth */
+  background: linear-gradient(135deg, #ffffff, #f8f9fc); 
   padding: 25px;
-  border-radius: 20px; /* Rounded corners for a modern look */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.4s ease-in-out;
   display: flex;
@@ -48,14 +48,14 @@ body {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  min-height: 350px; /* Slightly taller for uniformity */
-  border: 2px solid #e4e7eb; /* Professional border */
+  min-height: 350px; 
+  border: 2px solid #e4e7eb; 
 }
 
 .styles-card:hover {
-  transform: translateY(-8px); /* Lift on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced hover effect */
-  border-color: #007bff; /* Highlight border on hover */
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
+  border-color: #007bff; 
 }
 
 /* Card Image */
@@ -63,20 +63,20 @@ body {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 15px; /* Slight rounding for a polished look */
+  border-radius: 15px;
   margin-bottom: 20px;
-  border: 2px solid #e4e7eb; /* Match card border */
+  border: 2px solid #e4e7eb; 
   transition: border-color 0.3s;
 }
 
 .styles-image:hover {
-  border-color: #007bff; /* Highlight image on hover */
+  border-color: #007bff; 
 }
 
 /* Card Description */
 .styles-description {
   font-size: 1rem;
-  color: #555; /* Softer text color for readability */
+  color: #555; 
   text-align: center;
   line-height: 1.8;
   margin-top: 10px;
@@ -86,10 +86,10 @@ body {
 .styles-button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007bff; /* Attractive blue */
+  background-color: #007bff; 
   color: #fff;
   border: none;
-  border-radius: 25px; /* Smooth button shape */
+  border-radius: 25px; 
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
@@ -98,32 +98,32 @@ body {
 }
 
 .styles-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
   box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
   .styles-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px; /* Adjust spacing */
   }
 }
 
 @media (max-width: 576px) {
   .styles-grid {
-    grid-template-columns: 1fr; /* One column for small screens */
-    gap: 20px; /* Adjust spacing for smaller devices */
+    grid-template-columns: 1fr; 
+    gap: 20px; 
   }
 
   .styles-card {
-    min-height: 300px; /* Adapt height for smaller screens */
+    min-height: 300px; 
   }
 }
 
 /* Footer Styling */
 .styles-footer {
-  background-color: #2c3e50; /* Dark footer for contrast */
+  background-color: #2c3e50; 
   color: #fff;
   text-align: center;
   padding: 20px 0;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Footer.css"; // Link CSS
+import "./Footer.css"; 
 
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <p>&copy; 2024 Intercontinental Infotech Solutions (IISL). All Rights Reserved.</p>
         <div className="space-x-6 mt-4 md:mt-0">
-          <Link to="/about" className="hover:text-white">About Us</Link>
+          <Link to="/About" className="hover:text-white">About Us</Link>
           <Link to="/services" className="hover:text-white">Services</Link>
           <Link to="/contact" className="hover:text-white">Contact</Link>
         </div>

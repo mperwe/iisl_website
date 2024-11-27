@@ -1,10 +1,10 @@
 /* Header Styles */
 .header {
   background-color: rgb(12, 1, 10);
-  padding: 1rem 2rem;
+  padding: 1rem 5%;
   color: white;
   position: fixed; 
-  top: 0; /* Sticks the header to the top */
+  top: 0; 
   left: 0;
   right: 0;
   z-index: 1000;
@@ -20,7 +20,7 @@
 }
 
 .logo a {
-  font-size: 2.75rem;
+  font-size: clamp(1.8rem, 2vw, 2.75rem);
   font-weight: 1000;
   color: rgb(250, 249, 253);
   text-decoration: none;
@@ -28,22 +28,21 @@
 }
 
 .logo a:hover {
-  color: #ffdd57; /* Bright yellow on hover */
+  color: #ffdd57;
 }
 
 .logo-image {
-  width: 70px; /* Adjust as needed */
+  width: 70px;
   height: auto;
 }
 
-
 .menu {
   display: flex;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 .menu a {
-  font-size: 1.0rem;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
   color: rgb(249, 248, 251);
   text-decoration: none;
   position: relative;
@@ -89,21 +88,21 @@
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: rgb(4, 3, 15); 
+  background-color: transparent;
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   z-index: 999;
 }
 
 .mobile-menu a {
   color: white;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem; 
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -114,31 +113,44 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .menu {
-    display: none; /* Hide desktop menu */
+    display: none; 
   }
 
   .menu-icon {
-    display: block; /* Show menu icon */
+    display: block; 
   }
 
   .menu-open {
-    display: flex; /* Show the mobile menu when open */
+    display: flex; 
     flex-direction: column;
     position: absolute;
-    top: 100%; /* Below the header */
+    top: 100%;
     left: 0;
     right: 0;
-    background-color: rgb(4, 3, 15); /* Match header background */
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem; 
+    animation: slideDown 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 769px) {
   .mobile-menu {
-    display: none; /* Hide mobile menu */
+    display: none; 
   }
 
   .menu {
-    display: flex; /* Show desktop menu */
+    display: flex; 
+  }
+}
+
+/* Animation for Mobile Menu */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
