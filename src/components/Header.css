@@ -3,8 +3,8 @@
   background-color: rgb(12, 1, 10);
   padding: 1rem 5%;
   color: white;
-  position: fixed; 
-  top: 0; 
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -34,6 +34,7 @@
 .logo-image {
   width: 70px;
   height: auto;
+  object-fit: contain;
 }
 
 .menu {
@@ -69,7 +70,6 @@
   color: #ffdd57;
 }
 
-/* Mobile Menu Icon */
 .menu-icon {
   display: none;
   background: none;
@@ -84,16 +84,34 @@
   color: white;
 }
 
+/* Dropdown Styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(12, 1, 10, 0.9);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Mobile Menu */
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: transparent;
+  background-color: rgba(12, 1, 10, 0.9);
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  padding: 0.5rem;
+  padding: 1rem;
   z-index: 999;
 }
 
@@ -102,7 +120,7 @@
   padding: 0.5rem 1rem;
   text-align: center;
   display: block;
-  font-size: 1rem; 
+  font-size: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -113,33 +131,33 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .menu {
-    display: none; 
+    display: none;
   }
 
   .menu-icon {
-    display: block; 
+    display: block;
   }
 
   .menu-open {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem; 
+    padding: 1rem;
     animation: slideDown 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 769px) {
   .mobile-menu {
-    display: none; 
+    display: none;
   }
 
   .menu {
-    display: flex; 
+    display: flex;
   }
 }
 
