@@ -72,13 +72,6 @@ const Services = () => {
       </div>
       
 
-      {/* Business Partners Section */}
-      <div className="partners-section">
-        <h2 className="section-title"></h2>
-        <div className="partners-logos">
-          {/* Partner logos or links */}
-        </div>
-      </div>
     </div>
   );
 };

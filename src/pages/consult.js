@@ -46,20 +46,7 @@ const Software = () => {
         
       </div>
 
-      {/* Back to Services Button */}
-      <div className="back-button-container">
-        <Link to="/services" className="back-button">
-          Back to Services
-        </Link>
-      </div>
-
-           {/* Business Partners Section */}
-      <div className="partners-section">
-        <h2 className="section-title">Our Trusted Partners</h2>
-        <div className="partners-logos">
-          {/* Partner logos or links */}
-        </div>
-      </div>
+      
     </div>
   );
 };

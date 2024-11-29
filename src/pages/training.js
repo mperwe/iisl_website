@@ -42,25 +42,11 @@ const Software = () => {
             <b>Customized Corporate Training;</b> We build the software by writing code using appropriate programming languages, frameworks, and tools. Our team develops the product in stages or modules to ensure accuracy and functionality.
           </p>
         </a>
-        
-        
+            
         
       </div>
 
-      {/* Back to Services Button */}
-      <div className="back-button-container">
-        <Link to="/services" className="back-button">
-          Back to Services
-        </Link>
-      </div>
-
-           {/* Business Partners Section */}
-      <div className="partners-section">
-        <h2 className="section-title">Our Trusted Partners</h2>
-        <div className="partners-logos">
-          {/* Partner logos or links */}
-        </div>
-      </div>
+           
     </div>
   );
 };
