@@ -1,8 +1,9 @@
 import React from "react";
-import "./Contact.css"; 
+import "./Contact.css";
 import boyImage from "../pages/contactus2.jpg";
 import footerImage from "../pages/data2.gif";
 
+/* Reusable Button Component */
 const ContactButton = ({ href, label, bgColor, textColor, children }) => (
   <a
     href={href}
@@ -15,13 +16,18 @@ const ContactButton = ({ href, label, bgColor, textColor, children }) => (
   </a>
 );
 
+/* Main Contact Component */
 const Contact = () => {
   return (
     <section className="contact-container mx-auto px-4 py-12 max-w-4xl">
       {/* Contact Card */}
       <article className="contact-card shadow-lg rounded-lg overflow-hidden flex flex-wrap lg:flex-nowrap bg-white">
         <div className="card-image-container flex-shrink-0 lg:w-1/3">
-          <img src={boyImage} alt="Contact" className="card-image w-full h-full object-cover" />
+          <img
+            src={boyImage}
+            alt="Contact Us"
+            className="card-image w-full h-full object-cover"
+          />
         </div>
         <div className="card-content p-6 flex-grow">
           <h2 className="card-title text-3xl font-bold text-gray-800 mb-4">Join Us Now</h2>
@@ -29,10 +35,17 @@ const Contact = () => {
             We're always ready to assist. Feel free to reach out with any questions or feedback.
           </p>
           <p className="text-lg text-gray-600 mb-2">
-            Email: <a href="mailto:info@iisl.com" className="text-blue-500 hover:underline">info@iisl.com</a>
+            Email:{" "}
+            <a
+              href="mailto:info@iisl.com"
+              className="text-blue-500 hover:underline"
+            >
+              info@iisl.com
+            </a>
           </p>
           <p className="text-lg text-gray-600">
-            Phone: <span className="font-bold text-gray-800">(123) 456-7890</span>
+            Phone:{" "}
+            <span className="font-bold text-gray-800">(123) 456-7890</span>
           </p>
         </div>
       </article>
@@ -75,7 +88,11 @@ const Contact = () => {
 
       {/* Footer Image Section */}
       <article className="footer-image mt-12">
-        <img src={footerImage} alt="Footer" className="w-full h-auto rounded-lg shadow-lg" />
+        <img
+          src={footerImage}
+          alt="Footer"
+          className="w-full h-auto rounded-lg shadow-lg"
+        />
       </article>
     </section>
   );
