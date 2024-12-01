@@ -4,11 +4,13 @@
   text-align: center;
 }
 
+/* Slider Section */
 .slider-section h2 {
   font-size: 2.5rem; /* Increased font size */
   font-weight: bold;
   color: #333; /* Optional: Darker color for better readability */
   margin-bottom: 30px;
+  margin-top: 50px; /* Adjusted top margin to lower the title */
 }
 
 .slider {
