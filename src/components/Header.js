@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Header.css"; // Import the CSS
-import logo from "../pages/iisllogo.png"; // Import the logo
+import "./Header.css";
+import logo from "../pages/iisllogo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +14,19 @@ const Header = () => {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".dropdown")) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="header">
@@ -37,10 +50,9 @@ const Header = () => {
             </span>
             {isDropdownOpen && (
               <ul className="dropdown-menu">
-                
                 <li><Link to="/network" className="menu-item" onClick={toggleDropdown}>Networking</Link></li>
                 <li><Link to="/software" className="menu-item" onClick={toggleDropdown}>Software</Link></li>
-                <li><Link to="/business" className="menu-item" onClick={toggleDropdown}>Business </Link></li>
+                <li><Link to="/business" className="menu-item" onClick={toggleDropdown}>Business</Link></li>
                 <li><Link to="/training" className="menu-item" onClick={toggleDropdown}>Training</Link></li>
                 <li><Link to="/consult" className="menu-item" onClick={toggleDropdown}>Support</Link></li>
               </ul>
