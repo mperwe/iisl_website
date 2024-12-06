@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./styles.css"; // Link CSS
 
 // Import images for the service cards
-import card1Img from "../components/images/boy1.jpg";
+import card1Img from "../components/images/training1.jpeg";
 import card2Img from "../components/images/boy2.jpg";
 import card3Img from "../components/images/boy3.jpg";
 import card4Img from "../components/images/boy1.jpg";
