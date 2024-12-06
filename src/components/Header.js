@@ -53,8 +53,8 @@ const Header = () => {
                 <li><Link to="/network" className="menu-item" onClick={toggleDropdown}>Networking</Link></li>
                 <li><Link to="/software" className="menu-item" onClick={toggleDropdown}>Software</Link></li>
                 <li><Link to="/business" className="menu-item" onClick={toggleDropdown}>Business</Link></li>
-                <li><Link to="/training" className="menu-item" onClick={toggleDropdown}>Training</Link></li>
-                <li><Link to="/consult" className="menu-item" onClick={toggleDropdown}>Support</Link></li>
+                <li><Link to="/training" className="menu-item" onClick={toggleDropdown}>Training & Support</Link></li>
+                
               </ul>
             )}
           </div>

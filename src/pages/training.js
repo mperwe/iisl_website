@@ -3,14 +3,14 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./styles.css"; // Link CSS
 
 // Import images for the service cards
-import card1Img from "../components/images/boy1.jpg";
-import card2Img from "../components/images/boy2.jpg";
-import card3Img from "../components/images/boy3.jpg";
-import card4Img from "../components/images/boy1.jpg";
-import card5Img from "../components/images/boy2.jpg";
-import card6Img from "../components/images/boy3.jpg";
+import card1Img from "../components/images/training1.jpeg";
+import card2Img from "../components/images/training2.jpg";
+import card3Img from "../components/images/training3.jpeg";
+import card4Img from "../components/images/training4.jpeg";
+import card5Img from "../components/images/training5.png";
+import card6Img from "../components/images/training6.jpeg";
 
-const Software = () => {
+const Training = () => {
   return (
     <div className="styles-container">
       {/* Services Section */}
@@ -20,7 +20,7 @@ const Software = () => {
         {/* Styles Cards */}
        
         <a href="#" className="styles-card">
-          <img src={card2Img} alt="Data Cleaning & Preparation" className="styles-image" />
+          <img src={card1Img} alt="Data Cleaning & Preparation" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
           <b>Professional IT Skills Development;</b> IISL provides Providing tailored training programs to upskill individuals in areas like programming, cybersecurity, networking, and cloud computing.
@@ -44,7 +44,7 @@ const Software = () => {
         </a>
             
         <a href="#" className="styles-card">
-          <img src={card2Img} alt="Data Cleaning & Preparation" className="styles-image" />
+          <img src={card4Img} alt="Data Cleaning & Preparation" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
           <b>24/7 Technical Support;</b> Offering round-the-clock assistance to resolve IT issues, ensuring minimal downtime and continuous system functionality.
@@ -52,7 +52,7 @@ const Software = () => {
         </a>
         
         <a href="#" className="styles-card">
-          <img src={card2Img} alt="Data Cleaning & Preparation" className="styles-image" />
+          <img src={card5Img} alt="Data Cleaning & Preparation" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
           <b>Proactive System Monitoring;</b>Constantly monitoring IT systems for potential issues, addressing problems before they impact operations, and ensuring optimal performance.
@@ -60,7 +60,7 @@ const Software = () => {
         </a>
 
         <a href="#" className="styles-card">
-          <img src={card3Img} alt="Descriptive Analytics" className="styles-image" />
+          <img src={card6Img} alt="Descriptive Analytics" className="styles-image" />
           <h3 className="card-title"></h3>
           <p className="card-description">
             <b>Scalable IT Solutions;</b> Offering flexible and scalable technology solutions that grow with your business needs, ensuring your IT infrastructure can adapt to changing demands.
@@ -75,4 +75,4 @@ const Software = () => {
   );
 };
 
-export default Software;
+export default Training;
