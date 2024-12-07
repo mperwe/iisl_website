@@ -37,29 +37,28 @@ const Header = () => {
           </Link>
         </h1>
         <nav className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
-          <Link to="/" className="menu-item">HOME </Link>
-          <Link to="/about" className="menu-item">ABOUT</Link>
-          <div className="dropdown">
-            <span
-              className="dropdown-trigger"
-              onClick={toggleDropdown}
-              role="button"
-              tabIndex={0}
-            >
-              SERVICES
-            </span>
-            {isDropdownOpen && (
-              <ul className="dropdown-menu">
-                <li><Link to="/network" className="menu-item" onClick={toggleDropdown}>Networking</Link></li>
-                <li><Link to="/software" className="menu-item" onClick={toggleDropdown}>Software</Link></li>
-                <li><Link to="/business" className="menu-item" onClick={toggleDropdown}>Business</Link></li>
-                <li><Link to="/training" className="menu-item" onClick={toggleDropdown}>Training & Support</Link></li>
-                
-              </ul>
-            )}
-          </div>
-          <Link to="/contact" className="menu-item">CONTACTS</Link>
-        </nav>
+  <Link to="/" className="menu-item" onClick={toggleMenu}>HOME</Link>
+  <Link to="/about" className="menu-item" onClick={toggleMenu}>ABOUT</Link>
+  <div className="dropdown">
+    <span
+      className="dropdown-trigger"
+      onClick={toggleDropdown}
+      role="button"
+      tabIndex={0}
+    >
+      SERVICES
+    </span>
+    {isDropdownOpen && (
+      <ul className="dropdown-menu">
+        <li><Link to="/network" className="menu-item" onClick={toggleDropdown}>Networking</Link></li>
+        <li><Link to="/software" className="menu-item" onClick={toggleDropdown}>Software</Link></li>
+        <li><Link to="/business" className="menu-item" onClick={toggleDropdown}>Business</Link></li>
+        <li><Link to="/training" className="menu-item" onClick={toggleDropdown}>Training</Link></li>
+      </ul>
+    )}
+  </div>
+  <Link to="/contact" className="menu-item" onClick={toggleMenu}>CONTACTS</Link>
+</nav>
         <button
           className="menu-icon"
           onClick={toggleMenu}
