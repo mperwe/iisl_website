@@ -1,21 +1,23 @@
-/* src/components/Footer.css */
 .footer {
-    background-color: #111827;
-    padding: 2rem 0;
-    color: #9ca3af;
-    text-align: center;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  .footer a {
-    color: #9ca3af;
-    margin: 0 0.5rem;
-  }
-  
-  .footer a:hover {
-    color: white;
-  }
-  
+  background-color: #004080; /* Deep Blue Background */
+  padding: 2rem 0;
+  color: #ffffff; /* White Text */
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #f4f8ff; /* Soft White-Blue for secondary text */
+}
+
+.footer a {
+  color: #e6f0ff; /* Light Blue for Links */
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff; /* Pure White on Hover */
+}

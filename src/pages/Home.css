@@ -1,24 +1,26 @@
 /* Slider Section */
 .slider-section {
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
 }
 
-/* Slider Section */
 .slider-section h2 {
-  font-size: 2.5rem; /* Increased font size */
+  font-size: 2.8rem; /* Slightly larger for emphasis */
   font-weight: bold;
-  color: #333; /* Optional: Darker color for better readability */
-  margin-bottom: 30px;
-  margin-top: 50px; /* Adjusted top margin to lower the title */
+  color: #00274d; /* Dark blue for elegance */
+  margin-bottom: 40px;
+  margin-top: 60px;
+  text-transform: uppercase; /* Professional look with uppercase letters */
+  letter-spacing: 2px; /* Subtle spacing for refinement */
 }
 
 .slider {
   position: relative;
   width: 100%;
-  height: 700px; /* Adjust the height to fit the image size */
+  height: 650px; /* Balanced height for better responsiveness */
   overflow: hidden;
-  border-radius: 1px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .slide {
@@ -28,131 +30,158 @@
   right: 0;
   bottom: 0;
   opacity: 0;
-  transition: opacity 1s ease-in-out; /* Smooth fade transition */
-  z-index: -1; /* Makes non-active slides appear behind the active one */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  z-index: -1; 
 }
 
 .slide.active {
   opacity: 1;
-  z-index: 1; /* Makes the active slide come to the front */
+  z-index: 1;
+  transform: scale(1.02); /* Subtle zoom effect for active slide */
 }
 
 .slider img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
-  border-radius: 1px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Hero Section */
 .hero-section {
-  background-color: #dae4f7;
-  color: rgb(11, 3, 3);
-  padding: 20px 10px;
+  background: linear-gradient(135deg, #e6f4ff, #d1e7ff); /* Gradient for a modern touch */
+  color: #00274d;
+  padding: 60px 20px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 3.5rem; /* Larger headline for impact */
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .hero-text p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #004080; /* Softer dark blue for readability */
+  line-height: 1.8;
 }
 
 .cta-button {
-  background-color: #ff6200;
+  background: linear-gradient(135deg, #004080, #00539C); /* Gradient button */
   border: none;
-  padding: 12px 30px;
-  font-size: 1.1rem;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: white;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 50px; /* Pill-shaped button */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .cta-button:hover {
-  background-color: #e55a00;
+  background: linear-gradient(135deg, #003366, #003d73);
+  transform: translateY(-3px); /* Subtle hover elevation */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Testimonials Section */
 .testimonials-section {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  text-align: center; /* Centered text */
+  background-color: #f8fbff; /* Soft light blue */
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .testimonials-section h2 {
-  font-size: 2.5rem; /* Increased font size for better prominence */
-  margin-bottom: 30px;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
   font-weight: bold;
-  color: #333;
+  color: #00274d;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .testimonials-grid {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px; /* More spacing for a cleaner layout */
   flex-wrap: wrap;
 }
 
 .testimonial-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 320px; /* Slightly wider cards */
+  padding: 25px;
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
 .testimonial-card p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #555;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 1.6; /* Better readability */
 }
 
 .author {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #00539C;
 }
 
 /* CTA Section */
 .cta-section {
-  background-color: #00539C;
+  background: linear-gradient(135deg, #00539C, #003d73); /* Bold gradient */
   color: white;
-  padding: 60px 20px;
+  padding: 70px 30px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .cta-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
 }
 
 .cta-section p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  line-height: 1.8;
 }
 
 .cta-action-button {
-  background-color: #ff6200;
+  background: linear-gradient(135deg, #004080, #00274d); /* Dark gradient */
   border: none;
-  padding: 12px 30px;
-  font-size: 1.2rem;
+  padding: 15px 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
   color: white;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .cta-action-button:hover {
-  background-color: #e55a00;
+  background: linear-gradient(135deg, #003366, #001f3a);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }

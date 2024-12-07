@@ -15,8 +15,9 @@ const Footer = () => {
         </div>
         <div className="mt-4 md:mt-0 space-x-4">
           <a href="#" className="hover:text-white">Facebook</a>
-          <a href="#" className="hover:text-white">LinkedIn</a>
-          <a href="#" className="hover:text-white">Twitter</a>
+          <a href="https://www.linkedin.com/in/frank-mperwe-991ba6191/" className="hover:text-white">LinkedIn</a>
+          <a href="https://x.com/mperwefrank" className="hover:text-white">Twitter</a>
+          <a href="https://x.com/mperwefrank" className="hover:text-white">www.iisl.com</a>
         </div>
       </div>
     </footer>
