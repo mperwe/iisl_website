@@ -36,7 +36,7 @@ const Home = () => {
 
       {/* Image Slider Section */}
       <section className="slider-section">
-        <h2>Explore Our Projects</h2>
+        <h2>IISL Projects</h2>
         <div className="slider">
           {images.map((image, index) => (
             <div

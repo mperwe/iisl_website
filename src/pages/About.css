@@ -5,102 +5,67 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   color: #0e0e0e;
   line-height: 1.8;
-  background: url('backgd1.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('backgd1.jpg') no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensure the image covers the entire viewport */
 }
 
 /* Container Styling */
 .about-container {
   padding: 40px;
   max-width: 1200px;
-  margin: 130px auto 0;
-  background: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better readability */
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added a larger shadow for depth */
-  backdrop-filter: blur(10px); /* Adds a subtle blur effect for elegance */
-  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Banner Section */
 .banner-section {
   position: relative;
   text-align: center;
-  margin-bottom: 50px;
-}
-.about-banner {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 15px;
-  filter: brightness(80%); /* Darkens the image for better text contrast */
-  transition: all 0.3s ease-in-out;
-}
-.about-banner:hover {
-  filter: brightness(100%); /* Brightens on hover for interactivity */
+  margin-bottom: 30px;
 }
 .banner-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 42px;
+  font-size: 36px;
   font-weight: bold;
-  color: #fff;
-  background: rgba(31, 126, 210, 0.7);
-  padding: 15px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background: #00274d; /* Theme blue for the banner */
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: -50px; /* Adjust the position */
 }
 
 /* Card Section */
 .about-card {
-  margin-bottom: 40px;
-  padding: 30px;
-  background: linear-gradient(135deg, #ffffff, #f0f0f0);
-  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f0f8ff; /* Light blue background for sections */
+  border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.about-card:hover {
-  transform: translateY(-10px); /* Creates a lift effect on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .about-title {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #333;
-  border-bottom: 2px solid #4caf50; /* Adds a subtle accent underline */
-  display: inline-block;
+  color: #00274d; /* Blue theme for titles */
 }
 .about-paragraph {
   font-size: 18px;
-  color: #555;
-  margin: 15px 0;
-}
-
-/* Subsections */
-.about-subsection {
-  margin-bottom: 20px;
-}
-.about-subtitle {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-  border-left: 4px solid #4caf50; /* Adds a stylish accent */
-  padding-left: 10px;
+  color: #333; /* Darker text for contrast */
+  margin: 10px 0;
 }
 
 /* List Styling */
 .about-list {
-  list-style: disc inside;
+  list-style-type: disc;
   padding-left: 20px;
+  margin: 10px 0;
+  color: #555;
+  font-size: 1rem;
 }
 .about-list li {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #444;
+  margin-bottom: 8px;
 }
 
 /* Trustees Section */
@@ -111,56 +76,44 @@ body {
 .trustees-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  gap: 20px;
 }
 .trustee-card {
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  background: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.trustee-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .trustee-image {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin: 0 auto 10px;
   object-fit: cover;
-  border: 4px solid #4caf50;
-  transition: transform 0.3s ease;
-}
-.trustee-image:hover {
-  transform: scale(1.1); /* Grows on hover */
+  display: block;
+  border: 3px solid #00274d; /* Blue border for images */
 }
 .trustee-name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: #00274d; /* Blue theme for names */
 }
 .trustee-description {
   font-size: 16px;
   color: #666;
-  margin-top: 5px;
 }
 
-/* Buttons */
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background: #4caf50;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-button:hover {
-  background: #388e3c;
-  transform: scale(1.05);
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+  .banner-title {
+    font-size: 28px;
+  }
+  .about-title {
+    font-size: 22px;
+  }
 }

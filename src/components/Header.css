@@ -2,7 +2,7 @@
 :root {
   --primary-color: #004080; /* Deep Blue */
   --secondary-color: #f4f8ff; /* Light Blue-White */
-  --menu-item-hover-bg: #e6f0ff; /* Light Hover Blue */
+  --menu-item-hover-bg: rgba(0, 64, 128, 0.1); /* Transparent Blue */
   --menu-item-color: #003366; /* Dark Blue Text */
   --menu-item-hover-color: #001f4d; /* Darker Blue */
   --icon-color: #004080; /* Deep Blue */
@@ -16,26 +16,28 @@ body {
   margin: 0;
 }
 
+/* Header Styles */
 .header {
-  background-color: #ffffff;
-  border-bottom: 2px solid var(--dropdown-border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white */
+  border-bottom: 1px solid var(--dropdown-border);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding: 10px 0;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .logo-image {
-  height: 60px;
+  height: 50px;
   transition: transform 0.3s ease;
 }
 
@@ -46,22 +48,22 @@ body {
 /* Menu Styles */
 .menu {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
 }
 
 .menu-item {
   text-decoration: none;
   color: var(--menu-item-color);
-  font-size: 16px;
-  font-weight: 600;
-  padding: 10px 15px;
+  font-size: 15px; /* Reduced font size */
+  font-weight: 500; /* Slightly lighter weight */
+  padding: 8px 12px; /* Reduced padding */
   transition: all 0.3s ease;
   border-radius: 4px;
 }
 
 .menu-item:hover {
-  background-color: var(--menu-item-hover-bg);
+  background-color: var(--menu-item-hover-bg); /* Transparent Blue */
   color: var(--menu-item-hover-color);
 }
 
@@ -72,16 +74,16 @@ body {
 
 .dropdown-trigger {
   cursor: pointer;
-  padding: 10px 15px;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 8px 12px; /* Compact padding */
+  font-size: 15px;
+  font-weight: 500;
   color: var(--menu-item-color);
   transition: all 0.3s ease;
   border-radius: 4px;
 }
 
 .dropdown-trigger:hover {
-  background-color: var(--menu-item-hover-bg);
+  background-color: var(--menu-item-hover-bg); /* Transparent Blue */
   color: var(--menu-item-hover-color);
 }
 
@@ -89,14 +91,14 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #ffffff;
-  width: 220px;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white */
+  width: 200px; /* Slightly smaller */
   list-style: none;
-  padding: 10px 0;
+  padding: 8px 0; /* Reduced padding */
   margin-top: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--dropdown-border);
-  border-radius: 8px;
+  border-radius: 6px;
   display: none;
   z-index: 10;
 }
@@ -107,7 +109,7 @@ body {
 }
 
 .dropdown-menu li {
-  padding: 10px 20px;
+  padding: 8px 15px; /* Compact padding */
 }
 
 .dropdown-menu li a {
@@ -115,11 +117,11 @@ body {
   color: var(--menu-item-color);
   display: block;
   transition: all 0.3s ease;
-  font-size: 15px;
+  font-size: 14px; /* Reduced font size */
 }
 
 .dropdown-menu li a:hover {
-  background-color: var(--menu-item-hover-bg);
+  background-color: var(--menu-item-hover-bg); /* Transparent Blue */
   color: var(--menu-item-hover-color);
   border-radius: 4px;
 }
@@ -130,7 +132,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 8px;
   color: var(--icon-color);
   transition: all 0.3s ease;
 }
@@ -150,13 +152,13 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white */
     width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 20px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     z-index: 10;
   }
 
@@ -165,7 +167,7 @@ body {
   }
 
   .menu-item {
-    margin: 10px 0;
+    margin: 8px 0;
     text-align: center;
     width: 100%;
   }
@@ -185,14 +187,14 @@ body {
 
 @media (max-width: 480px) {
   .logo-image {
-    height: 50px;
+    height: 40px; /* Smaller logo */
   }
 
   .menu-item {
-    font-size: 14px;
+    font-size: 13px; /* Smaller text */
   }
 
   .dropdown-trigger {
-    font-size: 14px;
+    font-size: 13px; /* Smaller dropdown trigger */
   }
 }
