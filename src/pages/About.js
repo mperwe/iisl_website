@@ -80,7 +80,7 @@ const About = () => {
 
       {/* Board of Trustees Section */}
       <section className="trustees-section">
-        <h2 className="about-title">Board of Trustees</h2>
+        <h2 className="about-title">Testimonials </h2>
         <div className="trustees-grid">
           {trustees.map((trustee, index) => (
             <div key={index} className="trustee-card">
