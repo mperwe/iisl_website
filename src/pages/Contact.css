@@ -127,16 +127,16 @@ a[aria-label]:hover {
 
 /* Button Color Variants */
 .bg-blue-500 {
-  background-color: #4299e1;
+  background-color: #00274d;
   color: #ffffff;
 }
 
 .bg-blue-500:hover {
-  background-color: #3182ce;
+  background-color: #38a169;
 }
 
 .bg-green-500 {
-  background-color: #48bb78;
+  background-color: #00274d;
   color: #ffffff;
 }
 
@@ -145,12 +145,12 @@ a[aria-label]:hover {
 }
 
 .bg-green-400 {
-  background-color: #68d391;
+  background-color: #00274d;
   color: #ffffff;
 }
 
 .bg-green-400:hover {
-  background-color: #56c27d;
+  background-color: #38a169;
 }
 
 /* Footer Image Section */
