@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import boyImage from "../pages/contactus2.jpg";
-import footerImage from "../pages/data2.gif";
+import contactus1 from "../pages/iisllogo.png";
+
 
 /* Reusable Button Component */
 const ContactButton = ({ href, label, bgColor, textColor, children }) => (
@@ -22,17 +22,20 @@ const Contact = () => {
     <section className="contact-container mx-auto px-4 py-12 max-w-4xl">
       {/* Contact Card */}
       <article className="contact-card shadow-lg rounded-lg overflow-hidden flex flex-wrap lg:flex-nowrap bg-white">
-        <div className="card-image-container flex-shrink-0 lg:w-1/3">
-          <img
-            src={boyImage}
-            alt="Contact Us"
-            className="card-image w-full h-full object-cover"
-          />
-        </div>
+        
         <div className="card-content p-6 flex-grow">
-          <h2 className="card-title text-3xl font-bold text-gray-800 mb-4">Join Us Now</h2>
+          <h2 className="card-title text-3xl font-bold text-gray-800 mb-4">IISL</h2>
           <p className="card-description text-lg text-gray-600 mb-4">
             We're always ready to assist. Feel free to reach out with any questions or feedback.
+          </p>
+          <p className="text-lg text-gray-600 mb-2">
+            Website:{" "}
+            <a
+              href="mailto:info@iisl.com"
+              className="text-blue-500 hover:underline"
+            >
+              www.iisl.com
+            </a>
           </p>
           <p className="text-lg text-gray-600 mb-2">
             Email:{" "}
@@ -46,6 +49,14 @@ const Contact = () => {
           <p className="text-lg text-gray-600">
             Phone:{" "}
             <span className="font-bold text-gray-800">(123) 456-7890</span>
+          </p>
+          <p className="text-lg text-gray-600">
+            Phone:{" "}
+            <span className="font-bold text-gray-800">(123) 456-7891</span>
+          </p>
+          <p className="text-lg text-gray-600">
+            Phone:{" "}
+            <span className="font-bold text-gray-800">(123) 456-7892</span>
           </p>
         </div>
       </article>
@@ -89,7 +100,7 @@ const Contact = () => {
       {/* Footer Image Section */}
       <article className="footer-image mt-12">
         <img
-          src={footerImage}
+          src={contactus1}
           alt="Footer"
           className="w-full h-auto rounded-lg shadow-lg"
         />

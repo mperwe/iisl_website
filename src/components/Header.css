@@ -56,7 +56,7 @@ body {
   text-decoration: none;
   color: var(--menu-item-color);
   font-size: 15px; /* Reduced font size */
-  font-weight: 500; /* Slightly lighter weight */
+  font-weight: 700; /* Bold font */
   padding: 8px 12px; /* Reduced padding */
   transition: all 0.3s ease;
   border-radius: 4px;
@@ -76,7 +76,7 @@ body {
   cursor: pointer;
   padding: 8px 12px; /* Compact padding */
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700; /* Bold font */
   color: var(--menu-item-color);
   transition: all 0.3s ease;
   border-radius: 4px;
@@ -118,6 +118,7 @@ body {
   display: block;
   transition: all 0.3s ease;
   font-size: 14px; /* Reduced font size */
+  font-weight: 700; /* Bold font */
 }
 
 .dropdown-menu li a:hover {
