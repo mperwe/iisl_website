@@ -30,7 +30,7 @@ const Home = () => {
             Naffe tukikuumenga. <br />
         
           </p>
-          <Link to="/services">
+          <Link to="/">
             <button className="cta-button">Tusome</button> {/* "Learn, Explore" */}
           </Link>
         </div>
