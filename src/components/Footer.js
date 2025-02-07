@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-400 py-6">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <p>&copy; 2024 Intercontinental Infotech Solutions (IISL). All Rights Reserved.</p>
+        <p>&copy; 2025 Buganda yiyo Buganda yange (BYBY). All Rights Reserved.</p>
         <div className="space-x-6 mt-4 md:mt-0">
           <Link to="/About" className="hover:text-white">About Us</Link>
           <Link to="/services" className="hover:text-white">Services</Link>

@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 // Import images
-import data1 from "../components/images/data1.jpg";
-import data3 from "../components/images/data3.jpg";
-import IT1 from "../components/images/IT1.jpg";
-import IT2 from "../components/images/IT2.jpg";
-import IT3 from "../components/images/IT3.jpg";
+import bug1 from "../components/images/bug1.jpeg"
+import bug3 from "../components/images/bug3.jpg"
+import bug4 from "../components/images/bug4.jpg"
 
 const Home = () => {
-  const images = [data1, data3, IT1, IT2, IT3]; // Array of images to slide
+  const images = [ bug1, bug3, bug4 ]; // Array of images to slide
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -26,17 +24,21 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-text">
-          <h1>Empowering Digital Futures</h1>
-          <p>World-class IT solutions for efficiency, innovation, and growth.</p>
+          <h1>Buganda YIYO Buganda YANGE</h1>
+          <p>
+            Ekitiibwa kya Buganda kyava dda.<br />
+            Naffe tukikuumenga. <br />
+        
+          </p>
           <Link to="/services">
-            <button className="cta-button">Let’s Connect</button>
+            <button className="cta-button">Tusome</button> {/* "Learn, Explore" */}
           </Link>
         </div>
       </section>
 
       {/* Image Slider Section */}
       <section className="slider-section">
-        <h2>IISL Projects</h2>
+        <h2>BYBY Activities in Buganda</h2>
         <div className="slider">
           {images.map((image, index) => (
             <div
@@ -51,77 +53,50 @@ const Home = () => {
 
       {/* Testimonials Section */}
       <section className="testimonials-section">
-        <h2>Our Trusted Partners</h2>
+        <h2>Our Proud Partners</h2>
         <div className="testimonials-grid">
           <div className="testimonial-card">
             <p>
-              "IISL transformed our IT systems, boosting efficiency and reducing
-              costs."
+              "Twagala okukyusa enkolagana n’abaana
+              b'Obuganda."
             </p>
-            <p className="author">Robert M, CEO of Techie World</p>
+            <p className="author">K. K, Chairperson of Buganda Youth</p>
           </div>
           <div className="testimonial-card">
             <p>
-              "Their team is highly professional and provided excellent support
-              throughout the project."
+             Tukozesa obuvunaanyizibwa
+              okuva ku banaku."
             </p>
-            <p className="author">Afaazi, CTO of Afaazi Events</p>
+            <p className="author">K- B, Cultural Leader</p>
           </div>
           <div className="testimonial-card">
             <p>
-              "The solutions they provided significantly improved our workflow
-              and productivity."
+              "BYBY etukwatira ne Buganda Youth mu ngeri ezenjawulo, okufuula
+              abaana b’Obuganda abajjukirwa mu byafaayo."
             </p>
-            <p className="author">Frank, CTO of Media Apps</p>
+            <p className="author">N A, Youth Advocate</p>
           </div>
           <div className="testimonial-card">
             <p>
-              "The solutions they provided significantly improved our workflow
-              and productivity."
+              
+              Okutandika amateeka ag’ekitiibwa."
             </p>
-            <p className="author">Frank, CTO of Media Apps</p>
-          </div>
-          <div className="testimonial-card">
-            <p>
-              "The solutions they provided significantly improved our workflow
-              and productivity."
-            </p>
-            <p className="author">Frank, CTO of Media Apps</p>
-          </div>
-          <div className="testimonial-card">
-            <p>
-              "The solutions they provided significantly improved our workflow
-              and productivity."
-            </p>
-            <p className="author">Frank, CTO of Media Apps</p>
-          </div>
-          <div className="testimonial-card">
-            <p>
-              "The solutions they provided significantly improved our workflow
-              and productivity."
-            </p>
-            <p className="author">Frank, CTO of Media Apps</p>
-          </div>
-          <div className="testimonial-card">
-            <p>
-              "The solutions they provided significantly improved our workflow
-              and productivity."
-            </p>
-            <p className="author">Frank, CTO of Media Apps</p>
+            <p className="author">M M, Activist</p>
           </div>
         </div>
       </section>
-      
 
       {/* CTA Section */}
       <section className="cta-section">
-        <h2>Ready to Take Your Business to the Next Level?</h2>
-        <p>Contact us today to discover how our IT solutions can help your business grow.</p>
+        <h2>Ready to Celebrate Buganda's Rich Culture?</h2>
+        <p>
+          Join us in promoting Buganda's traditions, unity, and youthful energy.
+          Become part of a growing cultural movement today.
+        </p>
 
         <Link to="/Contact">
-        <button className="cta-action-button">Get a Free Consultation</button>
+          <button className="cta-action-button">Donation</button>
         </Link>
-       
       </section>
     </div>
   );

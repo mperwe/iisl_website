@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from "../pages/iisllogo.png";
+import logo from "../pages/bylogo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +38,7 @@ const Header = () => {
         </h1>
         <nav className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
   <Link to="/" className="menu-item" onClick={toggleMenu}>HOME</Link>
-  <Link to="/about" className="menu-item" onClick={toggleMenu}>ABOUT</Link>
+  <Link to="/" className="menu-item" onClick={toggleMenu}>ABOUT</Link>
   <div className="dropdown">
     <span
       className="dropdown-trigger"
@@ -50,11 +50,9 @@ const Header = () => {
     </span>
     {isDropdownOpen && (
       <ul className="dropdown-menu">
-        <li><Link to="/network" className="menu-item" onClick={toggleDropdown}>Networking</Link></li>
-        <li><Link to="/software" className="menu-item" onClick={toggleDropdown}>Software</Link></li>
-        <li><Link to="/business" className="menu-item" onClick={toggleDropdown}>Business</Link></li>
-        <li><Link to="/training" className="menu-item" onClick={toggleDropdown}>Training</Link></li>
-      </ul>
+        <li><Link to="/" className="menu-item" onClick={toggleDropdown}>Buganda1</Link></li>
+        <li><Link to="/" className="menu-item" onClick={toggleDropdown}>Buganda2</Link></li>
+            </ul>
     )}
   </div>
   <Link to="/contact" className="menu-item" onClick={toggleMenu}>CONTACTS</Link>

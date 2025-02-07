@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import contactus1 from "../pages/iisllogo.png";
+import contactus1 from "../pages/bylogo.png";
 
 
 /* Reusable Button Component */
@@ -24,26 +24,26 @@ const Contact = () => {
       <article className="contact-card shadow-lg rounded-lg overflow-hidden flex flex-wrap lg:flex-nowrap bg-white">
         
         <div className="card-content p-6 flex-grow">
-          <h2 className="card-title text-3xl font-bold text-gray-800 mb-4">IISL</h2>
+          <h2 className="card-title text-3xl font-bold text-gray-800 mb-4">BYBY</h2>
           <p className="card-description text-lg text-gray-600 mb-4">
             We're always ready to assist. Feel free to reach out with any questions or feedback.
           </p>
           <p className="text-lg text-gray-600 mb-2">
             Website:{" "}
             <a
-              href="mailto:info@iisl.com"
+              href="mailto:info@byby.com"
               className="text-blue-500 hover:underline"
             >
-              www.iisl.com
+              www.byby.com
             </a>
           </p>
           <p className="text-lg text-gray-600 mb-2">
             Email:{" "}
             <a
-              href="mailto:info@iisl.com"
+              href="mailto:info@byby.com"
               className="text-blue-500 hover:underline"
             >
-              info@iisl.com
+              info@byby.com
             </a>
           </p>
           <p className="text-lg text-gray-600">
