@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import contactus1 from "../pages/bylogo.png";
+import contactus1 from "../pages/iisllogo.png";
 
 
 /* Reusable Button Component */
@@ -34,7 +34,7 @@ const Contact = () => {
               href="mailto:info@byby.com"
               className="text-blue-500 hover:underline"
             >
-              www.byby.com
+              www.iisl.com
             </a>
           </p>
           <p className="text-lg text-gray-600 mb-2">
@@ -43,7 +43,7 @@ const Contact = () => {
               href="mailto:info@byby.com"
               className="text-blue-500 hover:underline"
             >
-              info@byby.com
+              info@iisl.com
             </a>
           </p>
           <p className="text-lg text-gray-600">
